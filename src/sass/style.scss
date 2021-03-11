@@ -11,8 +11,9 @@
 @import "icons";
 
 body {
-	color: $black;
 	overflow-x: hidden;
+	width: 100%;
+	color: $black;
 	font-family: $fontFamilyMain;
 	@include font-size(16, 14);
 	@include line-height(18, 16);
