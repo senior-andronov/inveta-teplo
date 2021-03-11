@@ -16,7 +16,7 @@ body {
 	color: $black;
 	font-family: $fontFamilyMain;
 	@include font-size(16, 14);
-	@include line-height(18, 16);
+	@include line-height(20, 18);
 }
 .container {
 	max-width: $maxWidthContainer + px;
@@ -24,10 +24,15 @@ body {
 	padding: $paddingContainer;
 	margin: 0 auto;
 }
+._h2 {
+	@include font-size(36, 24);
+	@include line-height(38, 26);
+	text-align: center;
+	font-weight: 700;
+}
 ._h3 {
 	@include font-size(24, 20);
-	@include line-height(26, 22);
-
+	@include line-height(28, 24);
 	font-weight: 700;
 }
 ._btn {
@@ -81,3 +86,4 @@ body {
 @import "../blocks/header/header";
 @import "../blocks/main/main";
 @import "../blocks/advantages/advantages";
+@import "../blocks/services/services";
