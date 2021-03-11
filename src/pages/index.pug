@@ -1,0 +1,16 @@
+extends ../pug/template
+block variables
+	- var title = 'ИНВЕТА ТЕПЛЫЙ ДОМ'
+	- var description = 'description'
+block content
+	main
+		include ../blocks/main/main
+		include ../blocks/advantages/advantages
+
+
+
+	//- script(crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default")
+	script(src="js/aos.js")
+	script(src="js/script.js")
+	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
+

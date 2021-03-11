@@ -1,0 +1,49 @@
+mixin icon(mod, name)
+  if(name)
+    svg(class=name + " icon icon_" + mod)
+      use(xlink:href="img/svg/symbol/sprite.svg#" + mod)
+  else
+    svg(class="icon icon_" + mod)
+      use(xlink:href="img/svg/symbol/sprite.svg#" + mod)
+
+mixin menu(className)
+  if className
+    -
+      item = className + "-item"
+      link = className + "-link"
+  else
+    -
+      item = ""
+      link = ""
+
+  ul.main-menu(class=className)
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="#services") Main
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="#about") About us
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="#mortgage") News
+    li.main-menu__item(class=item)
+      a.main-menu__link(class=link, href="#documents") Documents
+
+mixin bread-crumbs(className, ...items)
+  .bread-crumbs(class=className)
+    .container
+      ul.bread-crumbs__list
+        each item in items
+          li.bread-crumbs__item
+            a.bread-crumbs__link(href="#")= item
+
+mixin promo-help-white(title, desc)
+  .promo-help-white__inner
+    h2.promo-help-white__title=title
+
+    .promo-help-white__desc
+      p=desc
+
+    .promo-help-white__controls
+      a.promo-help-white__order.btn(href="#") Оставить заявку
+        +icon("next")
+
+      a.promo-help-white__consultant.btn.btn_outline(href="#") Онлайн консультант
+        +icon("chat")

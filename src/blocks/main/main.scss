@@ -1,0 +1,38 @@
+.main {
+	width: 100vw;
+	background: url("../img/content/main/main-bg.jpg") no-repeat right/cover;
+
+	&__wrapper {
+		height: 100vh;
+	}
+	&__content {
+		padding-top: 300px;
+	}
+	h1 {
+		@include font-size(36, 18);
+		line-height: 116%;
+		font-weight: 800;
+		max-width: 800px;
+		color: $white;
+		margin-bottom: 70px;
+	}
+	&__subtitle {
+		max-width: 490px;
+		margin-bottom: 30px;
+		@include font-size(24, 14);
+		line-height: 130%;
+		color: $white;
+	}
+}
+@media (max-width: $md3 + px) {
+	.main {
+		// background-position: center 0;
+		&__content {
+			padding-top: 250px;
+			text-align: center;
+		}
+		h1 {
+			margin-bottom: 30px;
+		}
+	}
+}

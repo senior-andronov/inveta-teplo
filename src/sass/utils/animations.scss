@@ -1,0 +1,85 @@
+[data-aos].aos-init {
+	animation-timing-function: cubic-bezier(0.6, 0, 0.25, 1) !important;
+}
+
+// [data-aos] {
+//   visibility: hidden;
+// }
+
+// [data-aos].animated {
+//   visibility: visible;
+// }
+
+$a-distance: 20px !default;
+
+.a-fade-up {
+	animation-name: a-fade-up;
+	animation-direction: 0.3s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.6, 0, 0.25, 1);
+}
+
+.a-delay-200 {
+	animation-delay: 0.5s;
+}
+
+@keyframes a-fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// Анимация вращния
+@keyframes rotate {
+	from {
+	}
+	to {
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+
+// Анимация исчезновения
+@keyframes hide {
+	0% {
+	}
+	33% {
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+}
+
+// Анимация блока с видео
+@keyframes video-box {
+	from {
+		height: calc(100vh - 186px);
+	}
+	to {
+		height: 576px;
+	}
+}
+
+@keyframes video-hero {
+	from {
+		margin-top: -186px;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+@keyframes video-header {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}

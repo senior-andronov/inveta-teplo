@@ -1,0 +1,138 @@
+.header {
+	padding-top: 20px;
+	position: absolute;
+	width: 100%;
+	height: 105px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		display: flex;
+	}
+	&__logo {
+		margin-right: 20px;
+		display: block;
+		position: relative;
+		width: 120px;
+		height: 70px;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__left-text > p {
+		color: $white;
+		max-width: 250px;
+		margin-bottom: 5px;
+	}
+	&__mail,
+	&__right-callback {
+		color: $accent;
+		position: relative;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $hover;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			background-color: $hover;
+			height: 2px;
+			width: 0%;
+			left: 50%;
+			transition: width 0.3s ease-in-out;
+			transform: translateX(-50%);
+		}
+		&:hover::after {
+			width: 100%;
+		}
+	}
+	&__right {
+		display: flex;
+	}
+	&__right-whatsapp,
+	&__right-phone {
+		p {
+			color: $accent;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				background-color: $hover;
+				height: 2px;
+				width: 0%;
+				left: 50%;
+				transition: width 0.3s ease-in-out;
+				transform: translateX(-50%);
+			}
+			&:hover::after {
+				width: 100%;
+			}
+		}
+	}
+	&__right-whatsapp {
+		display: flex;
+		height: 26px;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		margin-right: 30px;
+		&:hover {
+			color: $hover;
+		}
+	}
+	&__right-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	&__right-phone {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+		p {
+			color: $white;
+		}
+	}
+}
+@media (max-width: $md3 + px) {
+	.header {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__left,
+		&__right {
+			justify-content: space-between;
+		}
+		&__right {
+			margin-top: 30px;
+		}
+		&__left-text {
+			text-align: right;
+		}
+	}
+}
+@media (max-width: $md4 + px) {
+	.header {
+		font-size: 14px;
+		&__logo {
+			width: 100px;
+			height: 60px;
+		}
+		&__left-text {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+}
