@@ -1,0 +1,125 @@
+.callback {
+	&__modal {
+		display: none;
+		justify-content: center;
+		position: fixed;
+		z-index: 1;
+		padding-top: 57px;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		overflow-x: hidden;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	&__modal-content {
+		position: relative;
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		margin: 20px;
+		padding: 60px;
+		max-width: 560px;
+		max-height: 400px;
+		overflow: auto;
+		border-radius: 2px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		animation: animatetop 0.4s;
+	}
+	&__modal-title {
+		font-weight: 700;
+		@include font-size(24, 20);
+		@include line-height(32, 28);
+		color: $black-light;
+		margin-bottom: 30px;
+	}
+	&__modal-close {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+		transform: rotate(0);
+		&:active {
+			animation: animate-rotate 0.5s;
+			transform: rotate(180deg);
+		}
+	}
+	&__input {
+		@include font-size(18, 16);
+		display: block;
+		max-width: 280px;
+		width: 100%;
+		height: 31px;
+		padding: 4px 0;
+		border-bottom: 2px solid #cccccc;
+		margin-bottom: 30px;
+		&:focus::placeholder {
+			opacity: 0;
+			visibility: hidden;
+		}
+		&::placeholder {
+			transition: all 0.3s ease 0s;
+			color: #cccccc;
+		}
+	}
+	&__modal-personal {
+		font-size: 12px;
+		line-height: 14px;
+		color: #8f8f8f;
+		span {
+			font-weight: 700;
+			a {
+				color: $blue;
+				text-decoration: underline;
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: $blue-light;
+				}
+			}
+		}
+	}
+	&__modal-btn {
+		margin-bottom: 12px;
+	}
+	@keyframes animatetop {
+		from {
+			top: -300px;
+			opacity: 0;
+		}
+		to {
+			top: 0;
+			opacity: 1;
+		}
+	}
+	@keyframes animatetop2 {
+		from {
+			top: 0;
+			opacity: 1;
+		}
+		to {
+			top: -300px;
+			opacity: 0;
+		}
+	}
+	@keyframes animate-rotate {
+		from {
+			transform: rotate(0);
+		}
+		to {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+@media (max-width: $md4+px) {
+	.callback {
+		&__modal-content {
+			padding: 40px 20px;
+			justify-content: space-between;
+		}
+	}
+}

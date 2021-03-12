@@ -1,0 +1,12 @@
+form.pricelist__modal(action="")
+	.pricelist__modal-content
+		.pricelist__modal-title Оставьте контактные данные
+		.pricelist__modal-subtitle И мы подготовим смету проекта
+		.pricelist__modal-close
+			+icon('cross')
+		input.callback__input(type="text" placeholder="Ваш имя")
+		input.callback__input(type="tel" placeholder="Ваш телефон")
+		a.pricelist__modal-btn._btn(href="##") ОТПРАВИТЬ
+		.pricelist__modal-personal Нажимая кнопку “Отправить”, вы принимаете 
+			span 
+				a.privacy__btn(roll="button") условия обработки персональных данных

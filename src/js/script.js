@@ -23,7 +23,7 @@ import svg4everybody from 'svg4everybody';
 
 // import './components/header.js';
 import './components/accordion.js';
-import './components/modal.js';
+import './components/modals.js';
 // import './components/video.js';
 import './components/mask.js';
 import './components/tabs.js';
