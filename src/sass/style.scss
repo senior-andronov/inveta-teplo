@@ -18,6 +18,10 @@ body {
 	@include font-size(16, 14);
 	@include line-height(20, 18);
 }
+
+a {
+	cursor: pointer;
+}
 .container {
 	max-width: $maxWidthContainer + px;
 	width: 100%;
@@ -29,6 +33,8 @@ body {
 	@include line-height(38, 26);
 	text-align: center;
 	font-weight: 700;
+	margin: 0 auto 50px auto;
+	max-width: 600px;
 }
 ._h3 {
 	@include font-size(22, 20);
@@ -44,16 +50,18 @@ body {
 	color: $white;
 	font-weight: 700;
 	@include font-size(18, 14);
+	cursor: pointer;
 	letter-spacing: 2px;
 	background: $accent;
 	border-radius: 2px;
 	text-transform: uppercase;
 	transition: background-color 0.3s ease 0s, 0.1s ease-in-out 0s;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 	&:hover {
 		background-color: $hover;
 	}
 	&:active {
-		transform: scale(1.05);
+		transform: scale(1.03);
 	}
 }
 ._btn-transparent {

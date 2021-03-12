@@ -10,10 +10,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 -15px;
+
 	}
 	h2 {
 		color: $white;
-		margin-bottom: 50px;
+
 	}
 	&__item {
 		display: flex;
@@ -25,6 +26,10 @@
 		margin-bottom: 50px;
 		text-align: center;
 		color: $white;
+		&._hidden {
+			display: none;
+			overflow: hidden;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}

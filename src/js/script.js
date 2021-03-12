@@ -26,6 +26,7 @@ import './components/accordion.js';
 import './components/modal.js';
 // import './components/video.js';
 import './components/mask.js';
+import './components/tabs.js';
 
 
 svg4everybody();

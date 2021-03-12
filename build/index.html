@@ -25,10 +25,10 @@
               <svg class="icon icon_phone">
                 <use xlink:href="img/svg/symbol/sprite.svg#phone"></use>
               </svg>
-              <p>+7 343 226-48-39</p></a><a class="header__right-callback" id="header-btn" href="#">Обратный звонок</a></div>
+              <p>+7 343 226-48-39</p></a><a class="header__btn header__right-callback" roll="button">Обратный звонок</a></div>
         </div>
       </div>
-      <form class="header__modal" id="header-modal" action="">
+      <form class="header__modal" action="">
         <div class="header__modal-content">
           <div class="header__modal-title">Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут</div>
           <div class="header__modal-close">
@@ -139,8 +139,156 @@
       <section class="cost">
         <div class="cost__wrapper container">
           <h2 class="_h2">Стоимость теплого пола под ключ с учетом материалов</h2>
-          <div class="cost__content">
-            <div class="cost__item"></div>
+          <div class="cost__tabs">
+            <button class="cost__tabs-item _active" data-tab="1">100 кв/м </button>
+            <button class="cost__tabs-item" data-tab="2">200 кв/м</button>
+            <button class="cost__tabs-item" data-tab="3">300 кв/м</button>
+          </div>
+          <div class="cost__content-wrapper">
+            <div class="cost__content _active" data-tab="1">
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Стандарт</div>
+                    <div class="cost__price">от 1060 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола STOUT (Испания)<span>325₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>425₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper _item-comfort">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Комфорт</div>
+                    <div class="cost__price">от 1220 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола REHAU<span>565₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>785₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Премиум</div>
+                    <div class="cost__price">от 1060 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Пакет Комфорт</li>
+                      <li class="cost__list-item">В пакет премиум включена автоматика тёплого пола с возможностью регулировки температуры в каждой комнате <br>(от 40 000₽)</li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+            </div>
+            <div class="cost__content" data-tab="2">
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Стандарт</div>
+                    <div class="cost__price">от 990 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола STOUT (Испания)<span>325₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>425₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper _item-comfort">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Комфорт</div>
+                    <div class="cost__price">от 1150 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола REHAU<span>565₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>785₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Премиум</div>
+                    <div class="cost__price">от 1350 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Пакет Комфорт</li>
+                      <li class="cost__list-item">В пакет премиум включена автоматика тёплого пола с возможностью регулировки температуры в каждой комнате <br>(от 40 000₽)</li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+            </div>
+            <div class="cost__content" data-tab="3">
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Стандарт</div>
+                    <div class="cost__price">от 960 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола STOUT (Испания)<span>325₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>425₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper _item-comfort">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Комфорт</div>
+                    <div class="cost__price">от 1120 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Монтаж тёплого пола<span>от 250₽ за 1м<sup>2</sup></span></li>
+                      <li class="cost__list-item">Основание тёплого пола<span>Утеплитель, крепёж, расходные материалы 300₽ за 1м2</span></li>
+                      <li class="cost__list-item">Труба тёплого пола REHAU<span>565₽ за 1м<sup>2 </sup>при шаге укладке 200мм</span><span>785₽ за 1м<sup>2 </sup>при шаге укладки 150мм</span></li>
+                      <li class="cost__list-item">Коллекторная группа со смесительным узлом и циркуляционным насосом<span>Стоимость коллекторной группы от 25 000₽</span></li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+              <div class="cost__item-wrapper">
+                <div class="cost__item">
+                  <div class="cost__item-top">
+                    <div class="cost__title">Премиум</div>
+                    <div class="cost__price">от 1250 ₽/м<sup>2</sup></div>
+                    <div class="cost__subtitle">в стоимость включено:</div>
+                    <ul class="cost__list">
+                      <li class="cost__list-item">Пакет Комфорт</li>
+                      <li class="cost__list-item">В пакет премиум включена автоматика тёплого пола с возможностью регулировки температуры в каждой комнате <br>(от 40 000₽)</li>
+                    </ul>
+                  </div>
+                  <div class="cost__btn _btn">Получить прайс-лист</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

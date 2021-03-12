@@ -1,3 +1,138 @@
 .cost {
 	padding: 60px 0;
+	&__tabs {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	&__tabs-item {
+		color: $accent;
+		margin-right: 10px;
+		padding: 14px 20px;
+		border: 2px solid $accent;
+		transition: all 0.3s ease 0s;
+		@include font-size(18, 16);
+		font-weight: 500;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		&:hover,
+		&._active {
+			color: $white;
+			background-color: $accent;
+		}
+		&:active {
+			transform: scale(1.05);
+		}
+	}
+	&__content {
+		display: none;
+		justify-content: space-between;
+		margin: 0 -15px;
+		transition: all 0.3s ease 0s;
+		&._active {
+			display: flex;
+		}
+	}
+	&__item-wrapper {
+		padding: 0 15px;
+		flex: 33.3333%;
+		&._item-comfort {
+			.cost__item {
+				border: 3px solid $accent;
+			}
+			.cost__title {
+				background-color: $accent;
+			}
+			.cost__price {
+				color: $accent;
+			}
+			.cost__btn {
+				background-color: $accent;
+				&:hover {
+					background-color: $hover;
+				}
+			}
+		}
+	}
+	&__item {
+		background-color: $grey-light;
+		text-align: center;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		min-height: 691px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title {
+		color: $white;
+		padding: 16px 0;
+		background-color: $hover;
+		text-align: center;
+		margin-bottom: 16px;
+		@include font-size(18, 16);
+	}
+	&__price {
+		color: $hover;
+		font-weight: 700;
+		@include font-size(44, 36);
+		@include line-height(48, 40);
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	&__subtitle {
+		text-align: center;
+		@include font-size(18, 16);
+		@include line-height(20, 18);
+		color: $grey;
+		font-weight: 500;
+		margin-bottom: 24px;
+	}
+	&__list {
+		padding: 0 20px;
+		text-align: left;
+	}
+	&__list-item {
+		@include font-size(16, 14);
+		@include line-height(20, 18);
+		margin-bottom: 26px;
+		position: relative;
+		padding-left: 22px;
+		&::before {
+			content: "";
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: $hover;
+			position: absolute;
+			top: 6px;
+			left: 0;
+		}
+		span {
+			@include font-size(14, 12);
+			@include line-height(18, 16);
+			display: block;
+			font-weight: 300;
+			margin-top: 10px;
+		}
+	}
+	&__btn {
+		@include font-size(16, 12);
+		margin-bottom: 26px;
+		background-color: $hover;
+		&:hover {
+			background-color: $accent;
+		}
+	}
+}
+@media (max-width: $md2+px) {
+	.cost {
+		&__content {
+			flex-wrap: wrap;
+		}
+		&__item-wrapper {
+			flex: 100%;
+		}
+	}
 }
