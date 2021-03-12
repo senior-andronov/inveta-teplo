@@ -4,10 +4,27 @@
 	stroke: $accent;
 	fill: none;
 	margin-right: 5px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		stroke: $hover;
+	}
 }
 .icon_phone {
 	width: 20px;
 	height: 20px;
 	fill: $accent;
 	margin-right: 5px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		fill: $hover;
+	}
+}
+.icon_cross {
+	width: 20px;
+	height: 20px;
+	stroke: $accent;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		stroke: $hover;
+	}
 }

@@ -7,11 +7,12 @@ header.header
 				p г. Екатеринбург,<br> ул. Добролюбова 16/2, 10 этаж
 				a.header__mail(href="mailto:info@inveta-teplo.ru") info@inveta-teplo.ru
 		.header__right
-			a.header__right-whatsapp(href="whatsapp://send?phone=+73432264839")
+			a.header__right-whatsapp(href="https://wa.me/79122958282")
 				+icon('whatsapp')
 				p WhatsApp
 			.header__right-text
 				a.header__right-phone(href="tel:+73432264839") 
 					+icon('phone')
 					p +7 343 226-48-39
-				a.header__right-callback(href="") Обратный звонок
+				a#header-btn.header__right-callback(href="#") Обратный звонок
+	include ../modals/modal-callback/modal-callback

@@ -16,7 +16,7 @@
             <p>г. Екатеринбург,<br> ул. Добролюбова 16/2, 10 этаж</p><a class="header__mail" href="mailto:info@inveta-teplo.ru">info@inveta-teplo.ru</a>
           </div>
         </div>
-        <div class="header__right"><a class="header__right-whatsapp" href="whatsapp://send?phone=+73432264839">
+        <div class="header__right"><a class="header__right-whatsapp" href="https://wa.me/79122958282">
             <svg class="icon icon_whatsapp">
               <use xlink:href="img/svg/symbol/sprite.svg#whatsapp"></use>
             </svg>
@@ -25,9 +25,21 @@
               <svg class="icon icon_phone">
                 <use xlink:href="img/svg/symbol/sprite.svg#phone"></use>
               </svg>
-              <p>+7 343 226-48-39</p></a><a class="header__right-callback" href="">Обратный звонок</a></div>
+              <p>+7 343 226-48-39</p></a><a class="header__right-callback" id="header-btn" href="#">Обратный звонок</a></div>
         </div>
       </div>
+      <form class="header__modal" id="header-modal" action="">
+        <div class="header__modal-content">
+          <div class="header__modal-title">Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут</div>
+          <div class="header__modal-close">
+            <svg class="icon icon_cross">
+              <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
+            </svg>
+          </div>
+          <input type="tel" placeholder="Ваш телефон"><a class="header__modal-btn _btn" href="##">ОТПРАВИТЬ</a>
+          <div class="header__modal-personal">Нажимая кнопку “Отправить”, вы принимаете <span> <a href="##">условия обработки персональных данных</a></span></div>
+        </div>
+      </form>
     </header>
     <main>
       <section class="main">
@@ -68,13 +80,15 @@
               <div class="services__item-top">
                 <h3 class="_h3">Монтаж тёплого <br> пола</h3>
                 <p>Монтаж трубы шагом 200мм на имеющийся утеплитель (подготовка основания, монтаж утеплителя, укладка трубы)</p>
-              </div><span>от 250₽ до 450₽/м2</span>
+              </div>
+              <div class="services__item-price">от 250₽ до 450₽/м <sup>2</sup><span>?</span></div>
             </div>
             <div class="services__item">
               <div class="services__item-top">
                 <h3 class="_h3">Монтаж радиаторного отопления</h3>
                 <p>Монтаж и обвязка радиатора, укладка трубы</p>
-              </div><span>от 2 500₽</span>
+              </div>
+              <div class="services__item-price">от 2 500₽</div>
             </div>
             <div class="services__item">
               <div class="services__item-top">
@@ -102,19 +116,19 @@
             </div>
             <div class="services__item">
               <div class="services__item-top">
-                <h3 class="_h3">Рециркуляция горячей воды</h3>
+                <h3 class="_h3">Рециркуляция <br> горячей воды</h3>
                 <p>Не приходится сливать холодную воду, то есть, сливать деньги в канализацию</p>
               </div>
             </div>
             <div class="services__item">
               <div class="services__item-top">
-                <h3 class="_h3">Монтаж водоотведения</h3>
+                <h3 class="_h3">Монтаж <br> водоотведения</h3>
                 <p>Важно учесть не только системы водоснабжения, но и водоотведения бытовых стоков</p>
               </div>
             </div>
             <div class="services__item">
               <div class="services__item-top">
-                <h3 class="_h3">Обслуживание объектов</h3>
+                <h3 class="_h3">Обслуживание <br> объектов</h3>
                 <p>В стоимость годового обслуживания входят 2 плановых выезда и круглосуточные консультации по телефону</p>
               </div>
             </div>

@@ -36,7 +36,7 @@
     "core-js": "^3.6.5",
     "focus-visible": "^5.1.0",
     "gulp-rename": "^2.0.0",
-    "imask": "^6.0.5",
+    "imask": "^6.0.7",
     "jquery": "^3.5.1",
     "object-fit-images": "^3.2.4",
     "popper.js": "^1.16.1",

@@ -31,8 +31,8 @@ body {
 	font-weight: 700;
 }
 ._h3 {
-	@include font-size(24, 20);
-	@include line-height(28, 24);
+	@include font-size(22, 20);
+	@include line-height(26, 24);
 	font-weight: 700;
 }
 ._btn {
@@ -47,6 +47,7 @@ body {
 	letter-spacing: 2px;
 	background: $accent;
 	border-radius: 2px;
+	text-transform: uppercase;
 	transition: background-color 0.3s ease 0s, 0.1s ease-in-out 0s;
 	&:hover {
 		background-color: $hover;
