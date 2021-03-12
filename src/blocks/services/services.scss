@@ -3,6 +3,7 @@
 	background: url("../img/content/services/services-bg.jpg") no-repeat center/cover;
 	padding: 60px 0;
 	&__wrapper {
+		text-align: center;
 	}
 	&__content {
 		display: flex;
@@ -26,6 +27,9 @@
 		color: $white;
 		&:last-child {
 			margin-bottom: 0;
+		}
+		&._item-hide {
+			display: none;
 		}
 	}
 	&__item-price {
@@ -71,6 +75,9 @@
 				background: linear-gradient(90deg, #ef7d00 0%, #ffbb71 100%);
 			}
 		}
+	}
+	&__btn {
+		margin-top: 30px;
 	}
 }
 @media (max-width: $md1+px) {

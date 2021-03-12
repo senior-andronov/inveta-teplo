@@ -56,6 +56,19 @@ body {
 		transform: scale(1.05);
 	}
 }
+._btn-transparent {
+	color: $accent;
+	background-color: transparent;
+	border: 2px solid $accent;
+	&:hover {
+		background-color: $hover;
+		color: $white;
+		border: 2px solid $hover;
+	}
+	&:active {
+		transform: scale(1.05);
+	}
+}
 ._ibg {
 	background-position: center !important;
 	background-size: cover !important;
@@ -88,3 +101,4 @@ body {
 @import "../blocks/main/main";
 @import "../blocks/advantages/advantages";
 @import "../blocks/services/services";
+@import "../blocks/cost/cost";
