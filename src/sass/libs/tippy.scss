@@ -8,10 +8,8 @@
 	position: relative;
 	background-color: $white;
 	color: $black-light;
-	border-radius: 4px;
+	border-radius: 5px;
 	font-size: 14px;
-	text-align: center;
-	padding: 5px;
 	line-height: 1.4;
 	outline: 0;
 	transition-property: transform, visibility, opacity;
@@ -70,6 +68,9 @@
 }
 .tippy-content {
 	position: relative;
-	padding: 5px 9px;
-	z-index: 1;
+}
+#tippy-1 {
+	.tippy-content {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
 }
