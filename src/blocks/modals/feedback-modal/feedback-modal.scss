@@ -1,4 +1,4 @@
-.callback {
+.feedback {
 	&__modal {
 		display: none;
 		justify-content: center;
@@ -7,9 +7,9 @@
 		padding-top: 57px;
 		left: 0;
 		top: 0;
-		width: 100vw;
-		overflow-x: hidden;
+		width: 100%;
 		height: 100%;
+		overflow: auto;
 		background-color: rgba(0, 0, 0, 0.4);
 	}
 	&__modal-content {
@@ -22,8 +22,7 @@
 		margin: 20px;
 		padding: 60px;
 		max-width: 560px;
-		max-height: 400px;
-		overflow: auto;
+		max-height: 650px;
 		border-radius: 2px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		animation: animatetop 0.4s;
@@ -48,6 +47,7 @@
 			transform: rotate(180deg);
 		}
 	}
+
 	&__modal-personal {
 		font-size: 12px;
 		line-height: 14px;
@@ -77,16 +77,6 @@
 			opacity: 1;
 		}
 	}
-	@keyframes animatetop2 {
-		from {
-			top: 0;
-			opacity: 1;
-		}
-		to {
-			top: -300px;
-			opacity: 0;
-		}
-	}
 	@keyframes animate-rotate {
 		from {
 			transform: rotate(0);
@@ -96,12 +86,15 @@
 		}
 	}
 }
-
 @media (max-width: $md4+px) {
-	.callback {
+	.feedback {
 		&__modal-content {
-			padding: 40px 20px;
+			padding: 40px;
 			justify-content: space-between;
+		}
+		&__modal-title,
+		&__modal-subtitle {
+			margin-bottom: 0;
 		}
 	}
 }

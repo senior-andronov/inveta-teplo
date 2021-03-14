@@ -1,13 +1,18 @@
 @import "../modals/tippy/feedback-tippy/feedback-tippy";
+@import "../modals/tippy/feedback-tippy/feedback-tippy-two";
+@import "../modals/feedback-modal/feedback-modal";
+
 .feedback {
 	padding-top: 0px;
 	overflow: hidden;
+	padding-bottom: 200px;
 	h2 {
 		margin: 0px 0px 50px 0px;
 		text-align: left;
 	}
 	&__wrapper {
 		position: relative;
+		// text-align: center;
 	}
 	&__slider {
 		overflow: visible;
@@ -82,6 +87,12 @@
 	&__icon {
 		display: inline-block;
 	}
+	&__button-wrapper {
+		text-align: center;
+	}
+	&__btn {
+		margin-top: 50px;
+	}
 }
 .swiper-next,
 .swiper-prev {
@@ -154,6 +165,13 @@
 		}
 		.swiper-pagination {
 			display: block;
+		}
+	}
+}
+@media (max-width: $md4 + px) {
+	.feedback {
+		h2 {
+			margin: 0px 0px 40px 0px;
 		}
 	}
 }

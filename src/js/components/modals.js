@@ -38,6 +38,20 @@ privacyCross.onclick = function () {
 	document.getElementsByTagName("body")[0].style.overflow = "visible";
 }
 
+let feedbackModal = document.querySelector(".feedback__modal");
+let feedbackBtn = document.querySelectorAll(".feedback__btn");
+let feedbackCross = document.querySelector(".feedback__modal-close");
+feedbackBtn.forEach(btn => {
+	btn.onclick = function () {
+		feedbackModal.style.display = "flex";
+		document.getElementsByTagName("body")[0].style.overflow = "hidden";
+	}
+})
+feedbackCross.onclick = function () {
+	feedbackModal.style.display = "none";
+	document.getElementsByTagName("body")[0].style.overflow = "visible";
+}
+
 
 window.onclick = function (event) {
 	if (event.target == pricelistModal) {
@@ -52,7 +66,8 @@ window.onclick = function (event) {
 		privacyModal.style.display = "none";
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
+	if (event.target == feedbackModal) {
+		feedbackModal.style.display = "none";
+		document.getElementsByTagName("body")[0].style.overflow = "visible";
+	}
 }
-// document.querySelector('intro_btn').onclick = function () {
-// 	document.querySelector('main').classList.toggle('main--main-bg');
-// }

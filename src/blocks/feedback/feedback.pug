@@ -9,7 +9,7 @@ section.feedback
 			.swiper-wrapper
 				.swiper-slide
 					.feedback__video
-						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
 						.feedback__img 
 							img(src="img/content/feedback/clients/clients-2.png", alt="Клиент")
@@ -20,7 +20,7 @@ section.feedback
 								+icon('question')
 				.swiper-slide
 					.feedback__video
-						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
 						.feedback__img 
 							img(src="img/content/feedback/clients/clients-3.png", alt="Клиент")
@@ -31,14 +31,18 @@ section.feedback
 								+icon('question')
 				.swiper-slide
 					.feedback__video
-						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
+						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
 						.feedback__img 
 							img(src="img/content/feedback/clients/clients.png", alt="Клиент")
 						.feedback__text 
 							p Евгений, с. Косулино
 							span Монтаж системы отопления
-							.feedback__icon
+							.feedback__icon._tooltip-feedback-two
 								+icon('question')
 			.swiper-pagination
+		.feedback__button-wrapper
+			a.feedback__button._btn.feedback__btn(role="button") Оставить отзыв
 	include ../modals/tippy/feedback-tippy/feedback-tippy
+	include ../modals/tippy/feedback-tippy/feedback-tippy-two
+	include ../modals/feedback-modal/feedback-modal

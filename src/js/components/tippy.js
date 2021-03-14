@@ -1,23 +1,35 @@
 import tippy, { followCursor } from 'tippy.js';
 
 
-const template = document.querySelector('.feedback__tooltip');
-template.style.display = 'block';
+const servicesTooltip = document.querySelector('.services__tooltip');
+servicesTooltip.style.display = 'block';
+
+tippy('._tooltip-services', {
+	content: servicesTooltip,
+	trigger: "click",
+	maxWidth: 250,
+});
+
+const feedbackTooltip = document.querySelector('.feedback__tooltip');
+feedbackTooltip.style.display = 'block';
 
 tippy('._tooltip-feedback', {
-	content: template,
+	content: feedbackTooltip,
 	trigger: "click",
 	maxWidth: 400,
-	// placement: 'right-start',
+	interactive: true,
+	arrow: false,
+});
+
+const feedbackTooltipTwo = document.querySelector('.feedback__tooltip-two');
+feedbackTooltipTwo.style.display = 'block';
+
+tippy('._tooltip-feedback-two', {
+	content: feedbackTooltipTwo,
+	trigger: "click",
+	maxWidth: 400,
 	interactive: true,
 	arrow: false,
 });
 
 
-
-tippy('._tooltip-services', {
-	content: "Зависит от необходимости подготовки основания, монтажа утеплителя и шага укладки труб",
-	trigger: "click",
-	maxWidth: 250,
-
-});

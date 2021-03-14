@@ -214,6 +214,7 @@
           </div>
           <button class="services__btn _btn _btn-transparent">Еще +</button>
         </div>
+        <div class="services__tooltip">Зависит от необходимости подготовки основания, монтажа утеплителя и шага укладки труб</div>
       </section>
       <section class="cost">
         <div class="cost__wrapper container">
@@ -391,7 +392,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="feedback__video">
-                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
                 <div class="feedback__info"> 
                   <div class="feedback__img"> <img src="img/content/feedback/clients/clients-2.png" alt="Клиент"></div>
@@ -407,7 +408,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="feedback__video">
-                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
                 <div class="feedback__info"> 
                   <div class="feedback__img"> <img src="img/content/feedback/clients/clients-3.png" alt="Клиент"></div>
@@ -423,13 +424,13 @@
               </div>
               <div class="swiper-slide">
                 <div class="feedback__video">
-                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  <iframe class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
                 <div class="feedback__info"> 
                   <div class="feedback__img"> <img src="img/content/feedback/clients/clients.png" alt="Клиент"></div>
                   <div class="feedback__text"> 
                     <p>Евгений, с. Косулино</p><span>Монтаж системы отопления</span>
-                    <div class="feedback__icon">
+                    <div class="feedback__icon _tooltip-feedback-two">
                       <svg class="icon icon_question">
                         <use xlink:href="img/svg/symbol/sprite.svg#question"></use>
                       </svg>
@@ -440,6 +441,7 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+          <div class="feedback__button-wrapper"><a class="feedback__button _btn feedback__btn" role="button">Оставить отзыв</a></div>
         </div>
         <div class="feedback__tooltip">
           <div class="feedback__tooltip-header">
@@ -456,6 +458,37 @@
             <p>Смонтировали и запустили котельную на базе электрического котла Protherm</p>
           </div>
         </div>
+        <div class="feedback__tooltip-two">
+          <div class="feedback__tooltip-two-header">
+            <div class="feedback__tooltip-two-title">Монтаж системы отопления</div>
+            <div class="feedback__tooltip-two-cost">120 000
+              <svg class="icon icon_ruble">
+                <use xlink:href="img/svg/symbol/sprite.svg#ruble"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="feedback__tooltip-two-text">
+            <p>Смонтировали систему канализации</p>
+            <p>Выполнили обвязку скважины</p>
+            <p>Установили водонагреватель</p>
+            <p>Смонтировали систему водоснабжения</p>
+            <p>Смонтировали водяные теплые полы</p>
+          </div>
+        </div>
+        <form class="feedback__modal" action="">
+          <div class="feedback__modal-content">
+            <div class="feedback__modal-title">Оставьте свой отзыв о проделанной нами работе</div>
+            <div class="feedback__modal-close">
+              <svg class="icon icon_cross">
+                <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
+              </svg>
+            </div>
+            <input class="feedback__input" type="text" placeholder="Ваш имя">
+            <input class="feedback__input" type="tel" placeholder="Ваш телефон">
+            <textarea placeholder="Ваш отзыв"> </textarea><a class="feedback__modal-btn _btn" href="##">ОТПРАВИТЬ</a>
+            <div class="feedback__modal-personal">Нажимая кнопку “Отправить”, вы принимаете <span> <a class="privacy__btn" roll="button">условия обработки персональных данных</a></span></div>
+          </div>
+        </form>
       </section>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
