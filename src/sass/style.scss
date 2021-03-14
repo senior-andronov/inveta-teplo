@@ -48,7 +48,6 @@ textarea {
 	max-width: 280px;
 	min-height: 130px;
 	resize: none;
-
 }
 .container {
 	max-width: $maxWidthContainer + px;
@@ -146,3 +145,5 @@ textarea {
 @import "../blocks/services/services";
 @import "../blocks/cost/cost";
 @import "../blocks/feedback/feedback";
+@import "../blocks/examples/examples";
+

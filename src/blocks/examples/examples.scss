@@ -1,0 +1,129 @@
+.examples {
+	&__header {
+		text-align: center;
+	}
+	&__content {
+		display: flex;
+	}
+	h2 {
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		color: $grey;
+		font-weight: 300;
+		@include font-size(26, 20);
+		margin-bottom: 40px;
+	}
+	&__item {
+		margin-bottom: 60px;
+		display: flex;
+	}
+	&__info {
+		flex: 50%;
+	}
+	h3 {
+		margin-bottom: 8px;
+	}
+	&__info-subtitle {
+		margin-bottom: 30px;
+		color: $grey;
+		font-weight: 300;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__list-item {
+		margin-bottom: 12px;
+		position: relative;
+		padding-left: 25px;
+		color: $black-light;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 15px;
+			height: 2px;
+			background: linear-gradient(90deg, #ef7d00 0%, #ffbb71 100%);
+			top: 35%;
+			left: 0;
+		}
+	}
+	&__bottom {
+		display: flex;
+		align-items: center;
+	}
+	&__btn {
+		margin-right: 40px;
+	}
+	&__cost > p {
+		color: $black-light;
+		font-weight: 700;
+		// text-transform: uppercase;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	&__cost-item {
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		color: $accent;
+		font-weight: 700;
+		.icon_ruble {
+			width: 18px;
+			height: 28px;
+			margin-left: 5px;
+		}
+	}
+	&__sliders {
+		flex: 50%;
+	}
+	&__slider-top {
+		max-width: 540px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	&__slider-top-wrapper {
+		height: 288px;
+	}
+	&__slider-top-image {
+		width: 540px;
+		height: 288px;
+		overflow: hidden;
+		border-radius: 5px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__slider-bot {
+		// overflow: visible;
+		// max-width: 540px;
+		max-width: 540px;
+		overflow: hidden;
+	}
+	&__slider-top-wrapper {
+		height: 288px;
+	}
+	&__slider-bot-image {
+		width: 540px;
+		height: 288px;
+		overflow: hidden;
+		border-radius: 5px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		// width: 135px;
+		// height: 100px;
+		// img {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	object-fit: cover;
+		// }
+	}
+}

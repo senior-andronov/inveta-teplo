@@ -6,8 +6,8 @@ section.feedback
 		button.swiper-prev
 			+icon('next')
 		.feedback__slider.swiper-container
-			.swiper-wrapper
-				.swiper-slide
+			.feedback__slider-wrapper.swiper-wrapper
+				.feedback__slider-slide.swiper-slide
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
@@ -18,7 +18,7 @@ section.feedback
 							span Монтаж теплых полов
 							.feedback__icon._tooltip-feedback
 								+icon('question')
-				.swiper-slide
+				.feedback__slider-slide.swiper-slide
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
@@ -29,7 +29,7 @@ section.feedback
 							span Монтаж системы отопления
 							.feedback__icon
 								+icon('question')
-				.swiper-slide
+				.feedback__slider-slide.swiper-slide
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 

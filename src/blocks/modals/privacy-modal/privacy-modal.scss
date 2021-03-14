@@ -4,7 +4,7 @@
 		justify-content: center;
 		position: fixed;
 		z-index: 999;
-		padding-top: 57px;
+		padding-top: 30px;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -26,8 +26,8 @@
 	}
 	&__modal-title {
 		font-weight: 700;
-		@include font-size(24, 20);
-		@include line-height(32, 28);
+		@include font-size(24, 18);
+		@include line-height(32, 24);
 		color: $black-light;
 		margin-bottom: 30px;
 	}
@@ -98,7 +98,7 @@
 	.privacy {
 		&__modal-content {
 			max-width: 440px;
-			max-height: 450px;
+			max-height: 530px;
 			padding: 40px 15px 0 15px;
 		}
 		&__modal-list {

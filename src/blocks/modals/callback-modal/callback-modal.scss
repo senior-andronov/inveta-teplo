@@ -4,7 +4,7 @@
 		justify-content: center;
 		position: fixed;
 		z-index: 999;
-		padding-top: 57px;
+		padding-top: 30px;
 		left: 0;
 		top: 0;
 		width: 100vw;
@@ -17,12 +17,13 @@
 		background-color: $white;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		text-align: center;
 		align-items: center;
 		margin: 20px;
 		padding: 60px;
 		max-width: 560px;
-		max-height: 400px;
+		max-height: 420px;
 		overflow: auto;
 		border-radius: 2px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -30,8 +31,8 @@
 	}
 	&__modal-title {
 		font-weight: 700;
-		@include font-size(24, 20);
-		@include line-height(32, 28);
+		@include font-size(24, 18);
+		@include line-height(32, 24);
 		color: $black-light;
 		margin-bottom: 30px;
 	}
@@ -100,8 +101,7 @@
 @media (max-width: $md4+px) {
 	.callback {
 		&__modal-content {
-			padding: 40px 20px;
-			justify-content: space-between;
+			padding: 50px 30px;
 		}
 	}
 }

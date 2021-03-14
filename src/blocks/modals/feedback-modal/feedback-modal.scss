@@ -4,7 +4,7 @@
 		justify-content: center;
 		position: fixed;
 		z-index: 999;
-		padding-top: 57px;
+		padding-top: 30px;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -17,6 +17,7 @@
 		background-color: $white;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		text-align: center;
 		align-items: center;
 		margin: 20px;
@@ -47,7 +48,6 @@
 			transform: rotate(180deg);
 		}
 	}
-
 	&__modal-personal {
 		font-size: 12px;
 		line-height: 14px;
@@ -89,12 +89,16 @@
 @media (max-width: $md4+px) {
 	.feedback {
 		&__modal-content {
-			padding: 40px;
-			justify-content: space-between;
+			padding: 50px 30px;
+			max-height: 530px;
 		}
-		&__modal-title,
-		&__modal-subtitle {
-			margin-bottom: 0;
+		&__input,
+		&__modal-title {
+			margin-bottom: 20px;
+		}
+		textarea {
+			min-height: 80px;
+			margin-bottom: 20px;
 		}
 	}
 }
