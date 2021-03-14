@@ -28,3 +28,22 @@
 		stroke: $hover;
 	}
 }
+.icon_next {
+	width: 18px;
+	height: 18px;
+	stroke: $black;
+	fill: none;
+}
+.icon_question {
+	width: 20px;
+	height: 20px;
+	fill: $accent;
+	cursor: pointer;
+	transition: fill 0.3s ease 0s, transform 0.2s ease 0s;
+	&:hover {
+		fill: $hover;
+	}
+	&:active {
+		transform: scale(1.1);
+	}
+}

@@ -3,7 +3,7 @@
 		display: none;
 		justify-content: center;
 		position: fixed;
-		z-index: 1;
+		z-index: 999;
 		padding-top: 57px;
 		left: 0;
 		top: 0;
@@ -17,7 +17,7 @@
 		display: flex;
 		flex-direction: column;
 		margin: 20px;
-		padding: 60px;
+		padding: 60px 60px 0 60px;
 		max-width: 1000px;
 		overflow: auto;
 		max-height: 700px;
@@ -41,6 +41,10 @@
 	&__modal-list {
 		padding-left: 18px;
 		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 60px;
+		}
 	}
 	&__modal-text,
 	&__modal-item {
@@ -84,26 +88,24 @@
 		}
 	}
 }
-@media (max-width: $md4+px) {
-	.header {
-		&__modal-content {
-			max-width: 315px;
-			padding: 40px 30px;
-		}
-	}
-}
 @media (max-width: $md3+px) {
 	.privacy {
 		&__modal-content {
-			padding: 60px 30px;
+			padding: 60px 30px 0 30px;
 		}
 	}
 }
 @media (max-width: $md4+px) {
 	.privacy {
 		&__modal-content {
-			padding: 40px 15px;
+			max-width: 440px;
 			max-height: 450px;
+			padding: 40px 15px 0 15px;
+		}
+		&__modal-list {
+			&:last-child {
+				padding-bottom: 40px;
+			}
 		}
 	}
 }

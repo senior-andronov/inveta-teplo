@@ -1,14 +1,13 @@
-@import "node_modules/swiper/swiper";
-@import "node_modules/aos/src/sass/aos";
-@import "libs/tippy";
-@import "libs/animate.min";
-
 @import "utils/fonts";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/animations";
 @import "utils/nullstyle";
 @import "icons";
+
+@import "libs/tippy";
+@import "node_modules/aos/src/sass/aos";
+@import "libs/animate.min";
 
 body {
 	overflow-x: hidden;
@@ -18,9 +17,11 @@ body {
 	@include font-size(16, 14);
 	@include line-height(20, 18);
 }
-
 a {
 	cursor: pointer;
+}
+section {
+	padding: 60px 0;
 }
 .container {
 	max-width: $maxWidthContainer + px;
@@ -84,6 +85,7 @@ a {
 	background-repeat: no-repeat !important;
 	position: relative !important;
 }
+
 @media (max-width: $md1+px) {
 	.container {
 		max-width: 970px;
@@ -100,8 +102,15 @@ a {
 	}
 }
 @media (max-width: $md4+px) {
+	section {
+		padding: 40px 0;
+	}
+
 	._btn {
 		height: 60px;
+	}
+	._h2 {
+		margin: 0 auto 35px auto;
 	}
 }
 
@@ -110,3 +119,4 @@ a {
 @import "../blocks/advantages/advantages";
 @import "../blocks/services/services";
 @import "../blocks/cost/cost";
+@import "../blocks/feedback/feedback";

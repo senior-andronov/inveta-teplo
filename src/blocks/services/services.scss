@@ -1,7 +1,6 @@
 .services {
 	width: 100%;
 	background: url("../img/content/services/services-bg.jpg") no-repeat center/cover;
-	padding: 60px 0;
 	&__wrapper {
 		text-align: center;
 	}
@@ -10,11 +9,9 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 -15px;
-
 	}
 	h2 {
 		color: $white;
-
 	}
 	&__item {
 		display: flex;
@@ -83,6 +80,14 @@
 	}
 	&__btn {
 		margin-top: 30px;
+	}
+	&__icon {
+		display: inline-block;
+	}
+	.tippy-tooltip {
+		background-color: #dbeef5;
+		border-radius: 25px;
+		color: black;
 	}
 }
 @media (max-width: $md1+px) {

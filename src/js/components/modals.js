@@ -53,3 +53,6 @@ window.onclick = function (event) {
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
+// document.querySelector('intro_btn').onclick = function () {
+// 	document.querySelector('main').classList.toggle('main--main-bg');
+// }

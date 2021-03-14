@@ -1,7 +1,6 @@
 @import "../modals/pricelist-modal/pricelist-modal";
 
 .cost {
-	padding: 60px 0;
 	&__tabs {
 		display: flex;
 		justify-content: center;
@@ -16,6 +15,9 @@
 		@include font-size(18, 16);
 		font-weight: 500;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		&:last-child {
+			margin-right: 0;
+		}
 		&:hover,
 		&._active {
 			color: $white;
@@ -24,10 +26,14 @@
 		&:active {
 			transform: scale(1.05);
 		}
+		&._active {
+			&:active {
+				transform: scale(1);
+			}
+		}
 	}
 	&__content {
 		display: none;
-		justify-content: space-between;
 		margin: 0 -15px;
 		transition: all 0.3s ease 0s;
 		&._active {
@@ -128,13 +134,32 @@
 		}
 	}
 }
-@media (max-width: $md2+px) {
+@media (max-width: $md1+px) {
 	.cost {
 		&__content {
 			flex-wrap: wrap;
+			margin: 0 -10px;
 		}
 		&__item-wrapper {
 			flex: 100%;
+			margin-bottom: 30px;
+			padding: 0 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__item {
+			max-width: 600px;
+			width: 100%;
+			margin: 0 auto;
+			min-height: auto;
+		}
+	}
+}
+@media (max-width: $md4 + px) {
+	.cost {
+		&__tabs-item {
+			padding: 14px 10px;
 		}
 	}
 }
