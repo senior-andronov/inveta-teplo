@@ -23,11 +23,18 @@ const feedback = new Swiper('.feedback__slider', {
 });
 
 const examplesTopOne = new Swiper('.examples__slider-top-one', {
-	slidesPerView: 1,
 	spaceBetween: 30,
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
+	breakpoints: {
+		320: {
+			slidesPerView: 'auto',
+		},
+		768: {
+			slidesPerView: 1,
+		},
+	},
 });
 const examplesBotOne = new Swiper('.examples__slider-bot-one', {
 	slidesPerView: 3,
@@ -38,14 +45,7 @@ const examplesBotOne = new Swiper('.examples__slider-bot-one', {
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
 	allowTouchMove: false,
-	// breakpoints: {
-	// 	0: {
-	// 		slidesPerView: 5,
-	// 	},
-	// 	1162: {
-	// 		slidesPerView: 3,
-	// 	},
-	// },
+
 });
 
 examplesTopOne.controller.control = examplesBotOne;

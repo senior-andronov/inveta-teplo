@@ -1,0 +1,142 @@
+.contacts {
+	&__wrapper {
+	}
+	h2 {
+		margin: 0 0 60px 0;
+		text-align: left;
+		position: relative;
+		padding-left: 100px;
+		&::before {
+			content: "";
+			width: 70px;
+			height: 4px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -2px;
+			background: linear-gradient(90deg, #ef7d00 0%, #ffbb71 100%);
+		}
+	}
+	&__content {
+		display: flex;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	}
+	&__info {
+		padding: 50px;
+		max-width: 350px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h3 {
+		@include font-size(24, 22);
+		max-width: 250px;
+		margin-bottom: 15px;
+	}
+	&__adress {
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		@include font-size(18, 16);
+		font-weight: 700;
+		color: $black-light;
+		margin-bottom: 10px;
+	}
+	&__tel {
+		@include font-size(18, 16);
+		display: flex;
+		margin-bottom: 30px;
+	}
+	&__mail {
+		@include font-size(18, 16);
+		display: inline-flex;
+		margin-bottom: 30px;
+	}
+	&__phone,
+	&__mail {
+		color: $accent;
+		position: relative;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $hover;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			background-color: $hover;
+			height: 2px;
+			width: 0%;
+			left: 50%;
+			transition: width 0.3s ease-in-out;
+			transform: translateX(-50%);
+		}
+		&:hover::after {
+			width: 100%;
+		}
+	}
+	&__map {
+		width: 100%;
+		overflow: hidden;
+	}
+	p {
+		font-weight: 700;
+		color: $accent;
+	}
+}
+@media (max-width: $md3+px) {
+	.contacts {
+		&__content {
+			flex-direction: column;
+		}
+		&__info {
+			max-width: 100%;
+			flex-direction: row;
+			padding: 50px 30px 20px 30px;
+			justify-content: space-between;
+			&-bot {
+				display: flex;
+				flex-direction: column-reverse;
+				justify-content: flex-end;
+			}
+		}
+		&__mail {
+			margin-bottom: 0;
+		}
+		p {
+			margin-bottom: 21px;
+		}
+		&__map {
+			height: 350px;
+		}
+	}
+}
+@media (max-width: $md4+px) {
+	.contacts {
+		h2 {
+			margin: 0 0 40px 0;
+		}
+		&__info {
+			padding: 45px;
+			flex-direction: column;
+			// align-items: center;
+			&-top {
+				// max-width: 200px;
+				// width: 100%;
+			}
+			&-bot {
+				flex-direction: column;
+				// max-width: 200px;
+				// width: 100%;
+			}
+		}
+		&__mail {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.questions {
+	&__wrapper {
+		color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	h2 {
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		opacity: 0.8;
+		font-weight: 300;
+		@include font-size(26, 20);
+		@include line-height(28, 22);
+
+		margin-bottom: 40px;
+	}
+	&__input {
+	}
+	&__btn {
+		margin-bottom: 20px;
+	}
+	span {
+		color: $blue;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			background-color: $blue;
+			height: 2px;
+			width: 0%;
+			left: 50%;
+			transition: width 0.3s ease-in-out;
+			transform: translateX(-50%);
+		}
+		&:hover::after {
+			width: 100%;
+		}
+	}
+	form {
+		max-width: 280px;
+		width: 100%;
+	}
+}
+@media (max-width: $md3+px) {
+	.questions {
+		p {
+			max-width: 400px;
+		}
+	}
+}
