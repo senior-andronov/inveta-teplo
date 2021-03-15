@@ -228,3 +228,10 @@
 		}
 	}
 }
+@media (max-width: $md4+px) {
+	.examples {
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+}
