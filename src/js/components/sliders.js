@@ -27,13 +27,9 @@ const examplesTopOne = new Swiper('.examples__slider-top-one', {
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
-	breakpoints: {
-		320: {
-			slidesPerView: 'auto',
-		},
-		768: {
-			slidesPerView: 1,
-		},
+	pagination: {
+		el: '.examples__progressbar-one',
+		type: 'progressbar',
 	},
 });
 const examplesBotOne = new Swiper('.examples__slider-bot-one', {
@@ -57,6 +53,10 @@ const examplesTopTwo = new Swiper('.examples__slider-top-two', {
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
+	pagination: {
+		el: '.examples__progressbar-two',
+		type: 'progressbar',
+	},
 });
 const examplesBotTwo = new Swiper('.examples__slider-bot-two', {
 	slidesPerView: 3,
@@ -79,6 +79,10 @@ const examplesTopThree = new Swiper('.examples__slider-top-three', {
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
+	pagination: {
+		el: '.examples__progressbar-three',
+		type: 'progressbar',
+	},
 });
 const examplesBotThree = new Swiper('.examples__slider-bot-three', {
 	slidesPerView: 3,
@@ -101,6 +105,10 @@ const examplesTopFour = new Swiper('.examples__slider-top-four', {
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
+	pagination: {
+		el: '.examples__progressbar-four',
+		type: 'progressbar',
+	},
 });
 const examplesBotFour = new Swiper('.examples__slider-bot-four', {
 	slidesPerView: 3,
@@ -123,6 +131,10 @@ const examplesTopFive = new Swiper('.examples__slider-top-five', {
 	speed: 1000,
 	loop: true,
 	loopedSlides: 5,
+	pagination: {
+		el: '.examples__progressbar-five',
+		type: 'progressbar',
+	},
 });
 const examplesBotFive = new Swiper('.examples__slider-bot-five', {
 	slidesPerView: 3,

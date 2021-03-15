@@ -50,7 +50,7 @@
 			width: 15px;
 			height: 2px;
 			background: linear-gradient(90deg, #ef7d00 0%, #ffbb71 100%);
-			top: 35%;
+			top: 8px;
 			left: 0;
 		}
 		a {
@@ -101,7 +101,7 @@
 	&__slider-top {
 		max-width: 540px;
 		width: 100%;
-		overflow: hidden;
+		// overflow: hidden;
 		margin-bottom: 10px;
 	}
 	&__slider-top-wrapper {
@@ -143,6 +143,29 @@
 			object-fit: cover;
 		}
 	}
+	&__progressbar-one,
+	&__progressbar-two,
+	&__progressbar-three,
+	&__progressbar-four,
+	&__progressbar-five {
+		display: none;
+	}
+	// .swiper-pagination-progressbar {
+	// 	position: absolute;
+	// 	background: red;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	z-index: 99999;
+	// }
+	// .swiper-pagination-progressbar-fill {
+	// 	background: green;
+	// }
+}
+.swiper-pagination-progressbar {
+	top: 96% !important;
+}
+.swiper-pagination-progressbar-fill {
+	background: $accent !important;
 }
 @media (max-width: $md1+px) {
 	.examples {
@@ -176,11 +199,12 @@
 			overflow: hidden;
 			flex: 100%;
 		}
-		&__slider-top {
-			overflow: unset;
-		}
 		&__slider-top-image {
 			max-width: 520px;
+		}
+		&__slider-top {
+			height: 320px;
+			margin-bottom: 0;
 		}
 		&__slider-bot {
 			display: none;
@@ -194,6 +218,13 @@
 			margin: 0 0 20px 0;
 		}
 		&__cost {
+		}
+		&__progressbar-one,
+		&__progressbar-two,
+		&__progressbar-three,
+		&__progressbar-four,
+		&__progressbar-five {
+			display: block;
 		}
 	}
 }

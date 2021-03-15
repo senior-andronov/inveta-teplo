@@ -93,6 +93,10 @@
 	&__btn {
 		margin-top: 60px;
 	}
+	&__pagination {
+		display: none;
+		bottom: -11% !important;
+	}
 }
 .swiper-next,
 .swiper-prev {
@@ -130,10 +134,6 @@
 		fill: $accent;
 	}
 }
-.swiper-pagination {
-	display: none;
-	bottom: -13% !important;
-}
 .swiper-pagination-bullet-active {
 	background-color: $accent !important;
 }
@@ -163,18 +163,22 @@
 		.swiper-slide {
 			max-width: 500px !important;
 		}
-		.swiper-pagination {
+		&__pagination {
 			display: block;
 		}
 	}
 }
 @media (max-width: $md4 + px) {
 	.feedback {
+		padding-bottom: 40px;
 		h2 {
 			margin: 0px 0px 40px 0px;
 		}
 		&__btn {
 			margin-top: 40px;
+		}
+		&__pagination {
+			bottom: -30px !important;
 		}
 	}
 }

@@ -38,6 +38,7 @@
 		transition: all 0.3s ease 0s;
 		&._active {
 			display: flex;
+			animation: fade 1s ease;
 		}
 	}
 	&__item-wrapper {
@@ -132,6 +133,14 @@
 		&:hover {
 			background-color: $accent;
 		}
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
 @media (max-width: $md1+px) {
