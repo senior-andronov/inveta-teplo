@@ -36,7 +36,7 @@ privacyBtn.forEach(btn => {
 })
 privacyCross.onclick = function () {
 	privacyModal.style.display = "none";
-	document.getElementsByTagName("body")[0].style.overflow = "visible";
+	document.querySelector("body")[0].style.overflow = "visible";
 }
 
 let feedbackModal = document.querySelector(".feedback__modal");
@@ -58,6 +58,7 @@ window.onclick = function (event) {
 	if (event.target == pricelistModal) {
 		pricelistModal.style.display = "none";
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
+
 	}
 	if (event.target == callbackModal) {
 		callbackModal.style.display = "none";
