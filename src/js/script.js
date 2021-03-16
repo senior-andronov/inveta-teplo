@@ -32,6 +32,7 @@ import './components/tabs.js';
 import './components/sliders.js';
 import './components/tippy.js';
 import './components/anchors.js';
+import './components/form.js';
 
 
 svg4everybody();

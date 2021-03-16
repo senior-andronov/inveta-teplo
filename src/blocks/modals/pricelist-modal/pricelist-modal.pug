@@ -1,13 +1,14 @@
-form.pricelist__modal(action="")
+form#pricelistForm.pricelist__modal
 	.pricelist__modal-content
 		.pricelist__modal-header
 			.pricelist__modal-title Оставьте контактные данные
 			.pricelist__modal-subtitle И мы подготовим смету проекта
 		.pricelist__modal-close
 			+icon('cross')
-		input.pricelist__input(type="text" placeholder="Ваш имя")
-		input.pricelist__input(type="tel" placeholder="Ваш телефон")
-		a.pricelist__modal-btn._btn(href="##") ОТПРАВИТЬ
+		input#pricelistName.pricelist__input._req(type="text" name="name" placeholder="Ваш имя" required)
+		input#pricelistPhone.pricelist__input._req(type="tel" name="phone" placeholder="Ваш телефон" required)
+		input#pricelistMail.pricelist__input._req(type="mail" name="mail" placeholder="Ваш email" required)
+		button#pricelistSubmit.pricelist__modal-btn._btn._req(type="submit") ОТПРАВИТЬ
 		.pricelist__modal-personal Нажимая кнопку “Отправить”, вы принимаете 
 			span 
 				a.privacy__btn(roll="button") условия обработки персональных данных

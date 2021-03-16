@@ -34,12 +34,12 @@
       <section class="main">
         <div class="main__wrapper container">
           <div class="main__content">
-            <h1>Монтаж водяного тёплого пола, отопления и водоснабжения в частных домах Екатеринбурга и области</h1>
+            <h1 data-aos="fade">Монтаж водяного тёплого пола, отопления и водоснабжения в частных домах Екатеринбурга и области</h1>
             <div class="main__subtitle">Ответьте на 5 вопросов и получите расчет и персональную скидку 20%</div><a class="main__btn _btn" href="">Пройти тест</a>
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-aos="fade">
         <div class="container">
           <div class="advantages__wrapper">
             <div class="advantages__item"><img src="img/content/advantages/warranty.svg" alt="">
@@ -828,7 +828,7 @@
         <div class="callback__modal-personal">Нажимая кнопку “Отправить”, вы принимаете <span> <a class="privacy__btn" roll="button">условия обработки персональных данных</a></span></div>
       </div>
     </form>
-    <form class="pricelist__modal" action="">
+    <form class="pricelist__modal" id="pricelistForm">
       <div class="pricelist__modal-content">
         <div class="pricelist__modal-header">
           <div class="pricelist__modal-title">Оставьте контактные данные</div>
@@ -839,8 +839,10 @@
             <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
           </svg>
         </div>
-        <input class="pricelist__input" type="text" placeholder="Ваш имя">
-        <input class="pricelist__input" type="tel" placeholder="Ваш телефон"><a class="pricelist__modal-btn _btn" href="##">ОТПРАВИТЬ</a>
+        <input class="pricelist__input _req" id="pricelistName" type="text" name="name" placeholder="Ваш имя" required>
+        <input class="pricelist__input _req" id="pricelistPhone" type="tel" name="phone" placeholder="Ваш телефон" required>
+        <input class="pricelist__input _req" id="pricelistMail" type="mail" name="mail" placeholder="Ваш email" required>
+        <button class="pricelist__modal-btn _btn _req" id="pricelistSubmit" type="submit">ОТПРАВИТЬ</button>
         <div class="pricelist__modal-personal">Нажимая кнопку “Отправить”, вы принимаете <span> <a class="privacy__btn" roll="button">условия обработки персональных данных</a></span></div>
       </div>
     </form>
@@ -956,7 +958,7 @@
     </div>
     <div class="services__tooltip">Зависит от необходимости подготовки основания, монтажа утеплителя и шага укладки труб</div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/aos-min.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
