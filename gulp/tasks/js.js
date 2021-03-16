@@ -31,7 +31,7 @@ function jsDev() {
         ]
       }
     }))
-    //.pipe(minifyJs())
+    .pipe(minifyJs())
     .pipe(gulp.dest(path.output + 'js'))
     .pipe(browserSync.stream({once: true}));
 }
@@ -60,7 +60,7 @@ function jsBuild() {
         ]
       }
     }))
-    //.pipe(minifyJs())
+    .pipe(minifyJs())
     .pipe(gulp.dest(path.output + 'js'));
 }
 

@@ -16,7 +16,7 @@ function cssDev() {
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write())
-    //.pipe(minifyCSS())
+    .pipe(minifyCSS())
     .pipe(gulp.dest(path.output + 'css'))
     .pipe(browserSync.stream());
 }
@@ -25,7 +25,7 @@ function cssBuild() {
   return gulp.src(path.input + 'sass/style.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss([ autoprefixer() ]))
-    //.pipe(minifyCSS())
+    .pipe(minifyCSS())
     .pipe(gulp.dest(path.output + 'css'));
 }
 
