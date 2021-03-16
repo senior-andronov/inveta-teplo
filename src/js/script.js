@@ -1,15 +1,15 @@
 // import 'core-js/stable';
 // import 'regenerator-runtime/runtime';
-import 'core-js/features/symbol/';
-import 'core-js/features/promise/';
-import 'core-js/features/object/assign';
-import 'core-js/features/array/from';
-import 'core-js/features/array/find';
-import 'core-js/features/number/is-nan';
-import 'core-js/features/dom-collections/for-each';
-import 'core-js/features/is-iterable';
+// import 'core-js/features/symbol/';
+// import 'core-js/features/promise/';
+// import 'core-js/features/object/assign';
+// import 'core-js/features/array/from';
+// import 'core-js/features/array/find';
+// import 'core-js/features/number/is-nan';
+// import 'core-js/features/dom-collections/for-each';
+// import 'core-js/features/is-iterable';
 
-import 'whatwg-fetch';
+// import 'whatwg-fetch';
 // import './lib/polyfills.js';
 
 import tippy from 'tippy.js';

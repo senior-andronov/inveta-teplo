@@ -1,13 +1,13 @@
 section.feedback 
 	.feedback__wrapper.container 
-		h2._h2 Клиенты о нас
-		button.swiper-next
+		h2._h2(data-aos='fade-up') Клиенты о нас
+		button.swiper-next(data-aos='fade-up', data-aos-delay='50')
 			+icon('next')
-		button.swiper-prev
+		button.swiper-prev(data-aos='fade-up', data-aos-delay='100')
 			+icon('next')
 		.feedback__slider.swiper-container
 			.feedback__slider-wrapper.swiper-wrapper
-				.feedback__slider-slide.swiper-slide
+				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
@@ -18,7 +18,7 @@ section.feedback
 							span Монтаж теплых полов
 							.feedback__icon._tooltip-feedback
 								+icon('question')
-				.feedback__slider-slide.swiper-slide
+				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='50')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
@@ -29,7 +29,7 @@ section.feedback
 							span Монтаж системы отопления
 							a.feedback__icon(href="#examples-sergey")
 								+icon('question')
-				.feedback__slider-slide.swiper-slide
+				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='100')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
 					.feedback__info 
@@ -42,4 +42,4 @@ section.feedback
 								+icon('question')
 			.feedback__pagination.swiper-pagination
 		.feedback__button-wrapper
-			a.feedback__button._btn.feedback__btn(role="button") Оставить отзыв
+			a.feedback__button._btn.feedback__btn(role="button" data-aos='fade-up') Оставить отзыв
