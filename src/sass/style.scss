@@ -139,6 +139,8 @@ textarea {
 	}
 }
 
+// Блоки
+
 @import "../blocks/header/header";
 @import "../blocks/main/main";
 @import "../blocks/advantages/advantages";
@@ -148,3 +150,16 @@ textarea {
 @import "../blocks/examples/examples";
 @import "../blocks/questions/questions";
 @import "../blocks/contacts/contacts";
+
+// Модалки
+
+@import "../blocks/modals/callback-modal/callback-modal";
+@import "../blocks/modals/pricelist-modal/pricelist-modal";
+@import "../blocks/modals/feedback-modal/feedback-modal";
+@import "../blocks/modals/privacy-modal/privacy-modal";
+
+// Tippy
+
+@import "../blocks/tippy/feedback-tippy/feedback-tippy";
+@import "../blocks/tippy/feedback-tippy/feedback-tippy-two";
+@import "../blocks/tippy/services-tippy/services-tippy";

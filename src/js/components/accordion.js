@@ -1,13 +1,15 @@
-function accordion() {
-	document.querySelectorAll('.services__item:nth-child(n + 5)').forEach(item => item.classList.toggle('_hidden'));
-}
-accordion();
-document.querySelector(".services__btn").addEventListener("click", () => {
-	accordion();
-	addClassss.call(document.querySelector(".services__btn"))
-});
+// function accordion() {
+// 	document.querySelectorAll('.services__item:nth-child(n + 5)').forEach(item => item.classList.toggle('_hidden'));
+// }
+// accordion();
 
-function addClassss() {
+// document.querySelector(".services__btn").addEventListener("click", () => {
+// 	accordion();
+// 	addClassss
+// });
+
+
+function showText() {
 	if (this.classList.contains('_active')) {
 		this.classList.remove('_active')
 		this.textContent = 'Еще +'
@@ -17,23 +19,23 @@ function addClassss() {
 	}
 }
 
-// function reviewsOpen() {
-// 	const link = document.querySelectorAll('.services__content'),
-// 		openLink = item => {
-// 			const text = item.previousElementSibling;
-// 			if (text.classList.contains('_hidden')) {
-// 				text.style.maxHeight = text.scrollHeight + 'px';
-// 				text.addEventListener('transitionend', () => text.classList.remove('_hidden'))
-// 			} else {
-// 				text.classList.add('_hidden');
-// 				text.style.maxHeight = 144 + 'px';
-// 				text.addEventListener('transitionend', () => text.classList.add('_hidden'));
-// 			}
-// 		};
-// 	link.forEach(item => item.addEventListener('click', (e) => {
-// 		e.preventDefault();
-// 		e.stopPropagation();
-// 		openLink(item);
-// 	}))
-// }
-// reviewsOpen()
+const button = document.querySelector('.services__btn');
+const container = document.querySelectorAll('._hide');
+
+button.addEventListener('click', () => {
+	container.forEach(item => {
+		if (item.classList.contains('show')) {
+			item.classList.remove('show');
+			item.style.maxHeight = 0;
+			item.style.marginBottom = 0;
+			item.style.opacity = 0;
+		} else {
+			item.classList.add('show');
+			item.style.maxHeight = item.scrollHeight + 'px';
+			item.style.marginBottom = 50 + 'px';
+			item.style.opacity = 1;
+		}
+	})
+	showText.call(button);
+});
+

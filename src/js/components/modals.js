@@ -30,6 +30,7 @@ let privacyCross = document.querySelector(".privacy__modal-close");
 privacyBtn.forEach(btn => {
 	btn.onclick = function () {
 		privacyModal.style.display = "flex";
+		privacyModal.classList.add('_active')
 		document.getElementsByTagName("body")[0].style.overflow = "hidden";
 	}
 })
@@ -71,3 +72,6 @@ window.onclick = function (event) {
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
+
+
+// privacyModal - при закрытии проверить открыто (всем модалкам добавить общий класс)
