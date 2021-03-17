@@ -1,10 +1,12 @@
 section.feedback 
 	.feedback__wrapper.container 
 		h2._h2(data-aos='fade-up') Клиенты о нас
-		button.swiper-next(data-aos='fade-up', data-aos-delay='50')
-			+icon('next')
-		button.swiper-prev(data-aos='fade-up', data-aos-delay='100')
-			+icon('next')
+		.feedback__btn-right
+			button.swiper-next(data-aos='fade-up', data-aos-delay='50')
+				+icon('next')
+		.feedback__btn-left
+			button.swiper-prev(data-aos='fade-up', data-aos-delay='100')
+				+icon('next')
 		.feedback__slider.swiper-container
 			.feedback__slider-wrapper.swiper-wrapper
 				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='')
@@ -41,5 +43,5 @@ section.feedback
 							.feedback__icon._tooltip-feedback-two
 								+icon('question')
 			.feedback__pagination.swiper-pagination
-		.feedback__button-wrapper
-			a.feedback__button._btn.feedback__btn(role="button" data-aos='fade-up') Оставить отзыв
+		.feedback__btn-wrapper._btn-wrapper(data-aos='fade-up')
+			a.feedback__btn._btn(role="button") Оставить отзыв

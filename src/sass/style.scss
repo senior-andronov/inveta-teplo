@@ -93,6 +93,12 @@ textarea {
 		transform: scale(1.03);
 	}
 }
+._btn-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 280px;
+	text-align: center;
+}
 ._btn-transparent {
 	color: $accent;
 	background-color: transparent;
@@ -112,6 +118,7 @@ textarea {
 	background-repeat: no-repeat !important;
 	position: relative !important;
 }
+
 
 @media (max-width: $md1+px) {
 	.container {
