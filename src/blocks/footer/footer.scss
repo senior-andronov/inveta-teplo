@@ -1,0 +1,24 @@
+.footer {
+	padding: 20px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: $grey-light;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left {
+		@include font-size(18, 16);
+		color: rgba(0, 0, 0, 0.4);
+	}
+}
+@media (max-width: $md4+px) {
+	.footer {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__logo {
+			margin-top: 10px;
+		}
+	}
+}

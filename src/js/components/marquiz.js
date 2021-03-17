@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 	Marquiz.init({
 		host: '//quiz.marquiz.ru',
-		id: '5ef862135d150f004452a935',
+		id: '5dc42a0a08448b004405cfb0',
 		autoOpen: 40, autoOpenFreq: 'once',
 		openOnExit: true
 	});

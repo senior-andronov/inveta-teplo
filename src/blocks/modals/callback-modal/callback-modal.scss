@@ -14,6 +14,7 @@
 	}
 	&__modal-content {
 		position: relative;
+		top: -300px;
 		background-color: $white;
 		display: flex;
 		flex-direction: column;
@@ -26,8 +27,8 @@
 		max-height: 420px;
 		overflow: auto;
 		border-radius: 2px;
+		transition: 0.3s ease;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		animation: animatetop 0.4s;
 	}
 	&__modal-title {
 		font-weight: 700;
@@ -68,7 +69,7 @@
 	&__modal-btn {
 		margin-bottom: 12px;
 	}
-	@keyframes animatetop {
+	@keyframes animateTop {
 		from {
 			top: -300px;
 			opacity: 0;
@@ -78,7 +79,7 @@
 			opacity: 1;
 		}
 	}
-	@keyframes animatetop2 {
+	@keyframes animateUp {
 		from {
 			top: 0;
 			opacity: 1;
@@ -88,6 +89,7 @@
 			opacity: 0;
 		}
 	}
+
 	@keyframes animate-rotate {
 		from {
 			transform: rotate(0);
@@ -96,6 +98,12 @@
 			transform: rotate(180deg);
 		}
 	}
+}
+.animateTop {
+	animation: animateTop 0.3s ease;
+}
+.animateUp {
+	animation: animateUp 0.3s ease;
 }
 
 @media (max-width: $md4+px) {

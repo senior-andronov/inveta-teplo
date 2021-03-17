@@ -55,5 +55,9 @@
 }
 .icon_logo-footer {
 	width: 70px;
+	height: 37px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		fill: $accent;
+	}
 }
-

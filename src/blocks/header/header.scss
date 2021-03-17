@@ -133,6 +133,7 @@
 		position: relative;
 		transition: all 0.3s ease 0s;
 		display: none;
+		margin-left: 15px;
 		cursor: pointer;
 		// overflow: hidden;
 		span {
@@ -172,6 +173,9 @@
 	.header {
 		&__left {
 			flex-direction: column;
+		}
+		&__burger {
+			display: block;
 		}
 	}
 }

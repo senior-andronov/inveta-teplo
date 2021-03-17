@@ -1,12 +1,12 @@
 header.header
 	.header__wrapper.container
-		.header__left._da_header-left
+		.header__left
 			a.header__logo(href="")
 				img(src="img/general/logo.svg", alt="ИНВЕТА теплый дом")
 			.header__left-text
 				p г. Екатеринбург,<br> ул. Добролюбова 16/2, 10 этаж
 				a.header__mail(href="mailto:info@inveta-teplo.ru") info@inveta-teplo.ru
-		nav.header__menu
+		nav.header__menu(data-da=".header__mob-menu, 1192, first")
 			ul.header__menu-list
 				li.header__menu-link
 					a(href="") Услуги
@@ -18,7 +18,7 @@ header.header
 					a(href="") Наши работы
 				li.header__menu-link
 					a(href="") Контакты
-		.header__right(data-da="._da_header-left, 1192, last")
+		.header__right
 			a.header__right-whatsapp(href="https://wa.me/79122958282")
 				+icon('whatsapp')
 				p WhatsApp
@@ -31,3 +31,4 @@ header.header
 			span
 			span
 			span
+		.header__mob-menu
