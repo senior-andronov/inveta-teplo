@@ -23,8 +23,10 @@ a {
 section {
 	padding: 60px 0;
 }
-input,
-textarea {
+.feedback__input,
+.callback__input,
+.pricelist__input,
+.feedback__textarea {
 	@include font-size(18, 16);
 	display: block;
 	width: 100%;
@@ -43,10 +45,12 @@ textarea {
 		color: #cccccc;
 	}
 }
-input {
+.feedback__input,
+.callback__input,
+.pricelist__input {
 	min-height: 50px;
 }
-textarea {
+.feedback__textarea {
 	min-height: 130px;
 	resize: none;
 }
