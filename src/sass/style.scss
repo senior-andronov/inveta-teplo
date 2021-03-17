@@ -6,8 +6,8 @@
 @import "icons";
 
 @import "libs/tippy";
-@import "node_modules/aos/src/sass/aos";
-@import "libs/animate.min";
+// @import "node_modules/aos/src/sass/aos";
+// @import "libs/animate.min";
 
 body {
 	overflow-x: hidden;
@@ -149,6 +149,7 @@ textarea {
 
 // Блоки
 
+// @import "../blocks/test";
 @import "../blocks/header/header";
 @import "../blocks/main/main";
 @import "../blocks/advantages/advantages";
@@ -158,6 +159,7 @@ textarea {
 @import "../blocks/examples/examples";
 @import "../blocks/questions/questions";
 @import "../blocks/contacts/contacts";
+@import "../blocks/footer/footer";
 
 // Модалки
 

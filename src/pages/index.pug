@@ -4,6 +4,7 @@ block variables
 	- var description = 'description'
 block content
 	main
+		//- include ../blocks/test
 		include ../blocks/main/main
 		include ../blocks/advantages/advantages
 		include ../blocks/services/services
@@ -11,7 +12,7 @@ block content
 		include ../blocks/feedback/feedback
 		include ../blocks/examples/examples
 		include ../blocks/questions/questions
-		include ../blocks/contacts/contacts
+		//- include ../blocks/contacts/contacts
 block modals
 	include ../blocks/modals/callback-modal/callback-modal
 	include ../blocks/modals/pricelist-modal/pricelist-modal
@@ -27,8 +28,11 @@ block tippy
 
 
 	//- script(crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default")
+	
 	script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
-	script(src="js/aos-min.js")
+	//- script(src="js/aos-min.js")
 	script(src="js/script-min.js")
+	script(src="js/da-min.js")
+
 	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
 

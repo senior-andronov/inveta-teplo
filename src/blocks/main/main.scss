@@ -35,9 +35,12 @@
 		h1 {
 			margin-bottom: 30px;
 		}
+		&__btn-wrapper {
+			margin: 0 auto;
+		}
 	}
 }
-@media (max-width: $md3 + px) {
+@media (max-width: $md4 + px) {
 	.main {
 		&__content {
 			padding-top: 200px;

@@ -1,0 +1,24 @@
+.wrapper-top,
+.wrapper-bot {
+	padding: 50px;
+}
+.wrapper-top {
+	background-color: $grey;
+}
+.wrapper-bot {
+	background-color: $black-light;
+}
+
+.item-bot,
+.item-top {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 50px;
+}
+.item-bot {
+	background-color: $red;
+}
+.item-top {
+	background-color: $blue;
+}

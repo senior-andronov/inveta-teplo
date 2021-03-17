@@ -53,7 +53,6 @@ feedbackCross.onclick = function () {
 	document.getElementsByTagName("body")[0].style.overflow = "visible";
 }
 
-
 window.onclick = function (event) {
 	if (event.target == pricelistModal) {
 		pricelistModal.style.display = "none";
@@ -73,6 +72,7 @@ window.onclick = function (event) {
 		document.getElementsByTagName("body")[0].style.overflow = "visible";
 	}
 }
+
 
 
 // privacyModal - при закрытии проверить открыто (всем модалкам добавить общий класс)

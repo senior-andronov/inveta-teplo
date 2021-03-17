@@ -15,6 +15,7 @@ function jsDev() {
 			entry: {
 				script: './script.js',
 				aos: './aos.js',
+				da: './dynamicAdapt.js',
 			},
 			output: {
 				filename: '[name].js',
@@ -44,6 +45,7 @@ function jsBuild() {
 			entry: {
 				script: './script.js',
 				aos: './aos.js',
+				da: './dynamicAdapt.js',
 			},
 			output: {
 				filename: '[name].js'
