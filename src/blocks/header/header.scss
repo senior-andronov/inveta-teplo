@@ -175,12 +175,27 @@
 		&__burger {
 			display: block;
 		}
+		&__menu-list {
+			flex-direction: column;
+		}
+		&__menu-link {
+			a {
+				color: $black;
+			}
+		}
 	}
 }
 .header-mob-menu {
-	transform: translateY(100%);
+	transform: translateY(-100%);
+	position: absolute;
+	top: 0;
+	left: 0;
 	transition: all 0.3s ease 0s;
+	opacity: 0;
+	background-color: $white;
+	z
 	&._active {
 		transform: translateY(0);
+		opacity: 1;
 	}
 }

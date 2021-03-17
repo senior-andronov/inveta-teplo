@@ -26,6 +26,7 @@ section {
 .feedback__input,
 .callback__input,
 .pricelist__input,
+.questions__input,
 .feedback__textarea {
 	@include font-size(18, 16);
 	display: block;
@@ -47,7 +48,8 @@ section {
 }
 .feedback__input,
 .callback__input,
-.pricelist__input {
+.pricelist__input,
+.questions__input {
 	min-height: 50px;
 }
 .feedback__textarea {
