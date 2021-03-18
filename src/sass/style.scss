@@ -131,6 +131,47 @@ section {
 body.active {
 	overflow: hidden;
 }
+.animateTop {
+	animation: animateTop 0.3s ease;
+}
+.animateUp {
+	animation: animateUp 0.3s ease;
+}
+.animateFadeIn {
+	animation: animateFadeIn 0.3s ease;
+}
+.animateFadeOut {
+	animation: animateFadeOut 0.3s ease;
+}
+.modal__overflow {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	&._active {
+		display: block;
+	}
+}
+@keyframes animateFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes animateFadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
 @keyframes animateTop {
 	from {
 		top: -300px;
@@ -139,6 +180,24 @@ body.active {
 	to {
 		top: 0;
 		opacity: 1;
+	}
+}
+@keyframes animateUp {
+	from {
+		top: 0;
+		opacity: 1;
+	}
+	to {
+		top: -300px;
+		opacity: 0;
+	}
+}
+@keyframes animate-rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(180deg);
 	}
 }
 @media (max-width: $md1+px) {
@@ -178,6 +237,7 @@ body.active {
 @import "../blocks/cost/cost";
 @import "../blocks/feedback/feedback";
 @import "../blocks/examples/examples";
+@import "../blocks/about/about";
 @import "../blocks/questions/questions";
 @import "../blocks/contacts/contacts";
 @import "../blocks/footer/footer";

@@ -32,7 +32,7 @@ import './components/tabs.js';
 import './components/sliders.js';
 import './components/tippy.js';
 import './components/anchors.js';
-import './components/form.js';
+// import './components/form.js';
 import './components/burger.js';
 import './components/marquiz.js';
 // import './components/dynamicAdapt.js';

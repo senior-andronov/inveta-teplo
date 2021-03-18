@@ -12,36 +12,44 @@ section#feedback.feedback
 				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/SUVFRgONeDg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy")
-					.feedback__info 
-						.feedback__img 
-							img(src="img/content/feedback/clients/clients-2.png", loading="lazy", alt="Клиент")
-						.feedback__text 
-							p Василий, г. Березовский
-							span Монтаж теплых полов
-							.feedback__icon._tooltip-feedback
+					.feedback__info
+						.feedback__info-left
+							.feedback__img 
+								img(src="img/content/feedback/clients/clients-2.png", loading="lazy", alt="Клиент")
+							.feedback__text 
+								p Василий, г. Березовский
+								span Монтаж теплых полов
+						.feedback__info-right._tooltip-feedback
+							.feedback__icon
 								+icon('question')
+								|Подробнее
 				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='50')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/qQeSaAh14Jk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy")
-					.feedback__info 
-						.feedback__img 
-							img(src="img/content/feedback/clients/clients-3.png", loading="lazy", alt="Клиент")
-						.feedback__text 
-							p Сергей, д. Гусева
-							span Монтаж системы отопления
-							a.feedback__icon(href="#examples-sergey")
-								+icon('question')
+					.feedback__info
+						.feedback__info-left 
+							.feedback__img 
+								img(src="img/content/feedback/clients/clients-3.png", loading="lazy", alt="Клиент")
+							.feedback__text
+								p Сергей, д. Гусева
+								span Монтаж системы отопления
+						a.feedback__info-right(href="#examples-sergey")
+							+icon('home')
+							|Фото дома
 				.feedback__slider-slide.swiper-slide(data-aos='fade-up', data-aos-delay='100')
 					.feedback__video
 						iframe(class="feedback-iframe" src="https://www.youtube.com/embed/tNIgZK_QTnM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy")
-					.feedback__info 
-						.feedback__img 
-							img(src="img/content/feedback/clients/clients.png", loading="lazy", alt="Клиент")
-						.feedback__text 
-							p Евгений, с. Косулино
-							span Монтаж системы отопления
-							.feedback__icon._tooltip-feedback-two
+					.feedback__info
+						.feedback__info-left 
+							.feedback__img 
+								img(src="img/content/feedback/clients/clients.png", loading="lazy", alt="Клиент")
+							.feedback__text 
+								p Евгений, с. Косулино
+								span Монтаж системы отопления
+						.feedback__info-right._tooltip-feedback-two
+							.feedback__icon
 								+icon('question')
+								|Подробнее
 			.feedback__pagination.swiper-pagination
 		.feedback__btn-wrapper._btn-wrapper(data-aos='fade-up')
-			a.feedback__btn._btn.modal-button-js(role="button" data-modal='feedback') Оставить отзыв
+			a.feedback__btn._btn.modal-button-js(role="button" data-modal='feedback-modal') Оставить отзыв

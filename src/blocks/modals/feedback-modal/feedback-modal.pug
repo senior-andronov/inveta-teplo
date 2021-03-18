@@ -1,5 +1,5 @@
-form.feedback__modal.modal(action="")
-	.feedback__modal-content.modal__content
+#feedback-modal.feedback__modal.modal(action="")
+	form.feedback__modal-content.modal__content
 		.feedback__modal-title Оставьте отзыв о проделанной нами работе
 		.feedback__modal-close.modal__close
 			+icon('cross')
@@ -9,4 +9,5 @@ form.feedback__modal.modal(action="")
 		a.feedback__modal-btn._btn(href="##") ОТПРАВИТЬ
 		.feedback__modal-personal Нажимая кнопку “Отправить”, вы принимаете 
 			span 
-				a.privacy__btn(roll="button") условия обработки персональных данных
+				a.privacy__btn.modal-button-js(roll="button" data-modal="privacy-modal") условия обработки персональных данных
+	.modal__overflow

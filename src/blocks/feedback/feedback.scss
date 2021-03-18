@@ -1,7 +1,6 @@
 .feedback {
 	padding-bottom: 0;
 	overflow: hidden;
-	// background-color: $grey-light;
 	input,
 	textarea {
 		@include font-size(18, 16);
@@ -50,7 +49,6 @@
 		padding-bottom: 56.25%;
 		height: 0;
 		overflow: hidden;
-		margin-bottom: 20px;
 		iframe {
 			position: absolute;
 			top: 0;
@@ -62,8 +60,8 @@
 	&__info {
 		display: flex;
 		align-items: center;
-		margin-bottom: 20px;
 		position: relative;
+		justify-content: space-between;
 	}
 	&__img {
 		width: 50px;
@@ -71,7 +69,7 @@
 		border-radius: 50%;
 		position: relative;
 		overflow: hidden;
-		margin: 0 20px;
+		margin-right: 20px;
 		img {
 			position: absolute;
 			width: 100%;
@@ -80,9 +78,32 @@
 			left: 0;
 		}
 	}
+	&__info-left {
+		display: flex;
+		align-items: center;
+		padding: 30px 0 30px 20px;
+		position: relative;
+	}
+	&__info-right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-left: 1px solid #f0f0f5;
+		position: relative;
+		color: $accent;
+		font-weight: 500;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		padding: 30px 20px 30px 20px;
+		&:hover {
+			color: $hover;
+		}
+		&:hover .icon_home {
+			fill: $hover;
+		}
+	}
 	&__text {
 		p {
-			position: relative;
 			margin-bottom: 5px;
 		}
 		span {
@@ -108,10 +129,15 @@
 		}
 	}
 	&__icon {
-		display: inline-block;
-		margin-left: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.icon_question {
+			width: 24px;
+			height: 24px;
+			margin-bottom: 5px;
+		}
 	}
-
 	&__btn {
 		margin: 60px 0 10px 0;
 	}
@@ -163,14 +189,14 @@
 }
 @media (max-width: $md1 + px) {
 	.feedback {
-		.swiper-prev {
+		&__btn-left {
 			right: 6%;
 		}
 	}
 }
 @media (max-width: $md2 + px) {
 	.feedback {
-		.swiper-prev {
+		&__btn-left {
 			right: 8%;
 		}
 	}
@@ -180,16 +206,16 @@
 		h2 {
 			text-align: center;
 		}
-		.swiper-prev,
-		.swiper-next {
-			display: none;
-		}
-		.swiper-slide {
-			max-width: 500px !important;
-		}
 		&__pagination {
 			display: block;
 		}
+	}
+	.swiper-prev,
+	.swiper-next {
+		display: none;
+	}
+	.swiper-slide {
+		max-width: 500px !important;
 	}
 }
 @media (max-width: $md4 + px) {
@@ -203,6 +229,20 @@
 		}
 		&__pagination {
 			bottom: -30px !important;
+		}
+		&__info {
+			flex-direction: column;
+		}
+		&__info-left {
+			width: 100%;
+			padding: 10px 20px;
+		}
+
+		&__info-right {
+			width: 100%;
+			padding: 10px 0;
+			border-left: none;
+			border-top: 1px solid #f0f0f5;
 		}
 	}
 }

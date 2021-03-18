@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		return error;
 	}
 	function formAddError(input) {
-		// input.parentElement.classList.add('_error');
+		input.parentElement.classList.add('_error');
 		input.classList.add('_error');
 	}
 	function formRemoveError(input) {
-		// input.parentElement.classList.remove('_error');
+		input.parentElement.classList.remove('_error');
 		input.classList.remove('_error');
 	}
 	function emailTest(input) {
