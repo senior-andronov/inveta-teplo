@@ -1,11 +1,20 @@
 .header {
-	padding-top: 20px;
+	padding: 20px 0;
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 9999;
 	// overflow: hidden;
+	&._active {
+		.header__left-text,
+		.header__right-text {
+			p {
+				color: $black;
+				transition: all 1s ease 0s;
+			}
+		}
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -57,7 +66,8 @@
 		font-size: 14px;
 	}
 	&__mail,
-	&__right-callback {
+	&__right-callback,
+	&__menu-link {
 		color: $accent;
 		position: relative;
 		transition: all 0.3s ease 0s;
@@ -82,6 +92,7 @@
 	}
 	&__right {
 		display: inline-flex;
+		align-items: center;
 	}
 	&__right-whatsapp,
 	&__right-phone {
@@ -136,6 +147,7 @@
 		display: none;
 		cursor: pointer;
 		overflow: hidden;
+		margin-left: 45px;
 		span {
 			width: 30px;
 			height: 2px;
@@ -143,7 +155,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			background-color: $black;
+			background-color: $white;
 			transition: all 0.3s ease 0s;
 			&:nth-of-type(2) {
 				top: calc(50% - 8px);
@@ -154,6 +166,7 @@
 		}
 		&._active {
 			span {
+				background-color: $black;
 				&:first-of-type {
 					transform: translateX(500%);
 				}
@@ -168,6 +181,41 @@
 			}
 		}
 	}
+	&__mob-menu {
+		transform: translateY(-130%);
+		display: none;
+		position: absolute;
+		width: 100%;
+		min-height: 350px;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.3s ease 0s;
+		// opacity: 0;
+		background-color: $white;
+		&._active {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	&__logo-desc {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.3s ease 0s;
+		&._active {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	&__logo-mob {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		&._active {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 }
 @media (max-width: $md1+px) {
 	.header {
@@ -175,27 +223,89 @@
 		&__burger {
 			display: block;
 		}
+		&__menu {
+			justify-content: center;
+		}
+		&__mob-menu {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 110px 10px 40px 10px;
+		}
 		&__menu-list {
 			flex-direction: column;
 		}
 		&__menu-link {
+			@include font-size(32, 18);
+			@include line-height(36, 22);
+			margin-right: 0px;
+			margin-top: 32px;
+			font-weight: 500;
+			&:first-child {
+				margin-top: 0;
+			}
 			a {
 				color: $black;
 			}
 		}
 	}
 }
-.header-mob-menu {
-	transform: translateY(-100%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: all 0.3s ease 0s;
-	opacity: 0;
-	background-color: $white;
-	z
-	&._active {
-		transform: translateY(0);
-		opacity: 1;
+@media (max-width: $md2+px) {
+	.header {
+		&__right-whatsapp {
+			margin-right: 0;
+		}
+		&__burger {
+			margin-left: 20px;
+		}
+
+		&__right-text {
+			align-items: center;
+			margin-top: 32px;
+		}
+		&__right-phone {
+			p {
+				@include font-size(24, 18);
+				color: $black;
+			}
+		}
+		&__right-callback {
+			margin-top: 10px;
+			@include font-size(24, 18);
+		}
+	}
+}
+@media (max-width: $md3+px) {
+	.header {
+		&__left-text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 auto 18px auto;
+			max-width: 345px;
+			width: 100%;
+			background-color: #f6f6f6;
+			border-radius: 5px;
+			padding: 20px 0;
+			p {
+				text-align: center;
+				color: $black;
+				@include font-size(18, 16);
+			}
+		}
+		&__mail {
+			@include font-size(24, 18);
+		}
+	}
+}
+@media (max-width: $md4+px) {
+	.header {
+		&__logo {
+			width: 90px;
+			height: 40px;
+		}
+		&__mob-menu {
+			padding-top: 80px;
+		}
 	}
 }

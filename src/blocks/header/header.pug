@@ -2,33 +2,34 @@ header.header
 	.header__wrapper.container
 		.header__left
 			a.header__logo(href="")
-				img(src="img/general/logo.svg", alt="ИНВЕТА теплый дом")
-			.header__left-text
+				img.header__logo-desc(src="img/general/logo.svg", alt="ИНВЕТА теплый дом")
+				img.header__logo-mob(src="img/general/logo-mob.svg", alt="ИНВЕТА теплый дом")
+			.header__left-text(data-da=".header__mob-menu, 768, 0")
 				p г. Екатеринбург,<br> ул. Добролюбова 16/2, 10 этаж
 				a.header__mail(href="mailto:info@inveta-teplo.ru") info@inveta-teplo.ru
-		nav.header__menu(data-da=".header-mob-menu, 1192, first")
+		nav.header__menu(data-da=".header__mob-menu, 1192, 1")
 			ul.header__menu-list
 				li.header__menu-link
-					a(href="") Услуги
+					a(href="#services") Услуги
 				li.header__menu-link
-					a(href="") Цены
+					a(href="#cost") Цены
 				li.header__menu-link
-					a(href="") Отзывы
+					a(href="#feedback") Отзывы
 				li.header__menu-link
-					a(href="") Наши работы
+					a(href="#examples") Наши работы
 				li.header__menu-link
-					a(href="") Контакты
+					a(href="#contacts") Контакты
 		.header__right
 			a.header__right-whatsapp(href="https://wa.me/79122958282")
 				+icon('whatsapp')
 				p WhatsApp
-			.header__right-text
+			.header__right-text(data-da=".header__mob-menu, 1024, 2")
 				a.header__right-phone(href="tel:+73432264839") 
 					+icon('phone')
 					p +7 343 226-48-39
-				a.callback__btn.header__right-callback(roll="button") Обратный звонок
-		.header__burger
-			span
-			span
-			span
-	.header-mob-menu
+				a.header__right-callback.modal-button-js(roll="button") Обратный звонок
+			.header__burger
+				span
+				span
+				span
+	.header__mob-menu

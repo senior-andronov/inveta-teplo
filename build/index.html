@@ -13,18 +13,18 @@
   <body>
     <header class="header">
       <div class="header__wrapper container">
-        <div class="header__left"><a class="header__logo" href=""><img src="img/general/logo.svg" alt="ИНВЕТА теплый дом"></a>
-          <div class="header__left-text">
+        <div class="header__left"><a class="header__logo" href=""><img class="header__logo-desc" src="img/general/logo.svg" alt="ИНВЕТА теплый дом"><img class="header__logo-mob" src="img/general/logo-mob.svg" alt="ИНВЕТА теплый дом"></a>
+          <div class="header__left-text" data-da=".header__mob-menu, 768, 0">
             <p>г. Екатеринбург,<br> ул. Добролюбова 16/2, 10 этаж</p><a class="header__mail" href="mailto:info@inveta-teplo.ru">info@inveta-teplo.ru</a>
           </div>
         </div>
-        <nav class="header__menu" data-da=".header-mob-menu, 1192, first">
+        <nav class="header__menu" data-da=".header__mob-menu, 1192, 1">
           <ul class="header__menu-list">
-            <li class="header__menu-link"><a href="">Услуги</a></li>
-            <li class="header__menu-link"><a href="">Цены</a></li>
-            <li class="header__menu-link"><a href="">Отзывы</a></li>
-            <li class="header__menu-link"><a href="">Наши работы</a></li>
-            <li class="header__menu-link"><a href="">Контакты</a></li>
+            <li class="header__menu-link"><a href="#services">Услуги</a></li>
+            <li class="header__menu-link"><a href="#cost">Цены</a></li>
+            <li class="header__menu-link"><a href="#feedback">Отзывы</a></li>
+            <li class="header__menu-link"><a href="#examples">Наши работы</a></li>
+            <li class="header__menu-link"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
         <div class="header__right"><a class="header__right-whatsapp" href="https://wa.me/79122958282">
@@ -32,15 +32,15 @@
               <use xlink:href="img/svg/symbol/sprite.svg#whatsapp"></use>
             </svg>
             <p>WhatsApp</p></a>
-          <div class="header__right-text"><a class="header__right-phone" href="tel:+73432264839"> 
+          <div class="header__right-text" data-da=".header__mob-menu, 1024, 2"><a class="header__right-phone" href="tel:+73432264839"> 
               <svg class="icon icon_phone">
                 <use xlink:href="img/svg/symbol/sprite.svg#phone"></use>
               </svg>
-              <p>+7 343 226-48-39</p></a><a class="callback__btn header__right-callback" roll="button">Обратный звонок</a></div>
+              <p>+7 343 226-48-39</p></a><a class="header__right-callback modal-button-js" roll="button">Обратный звонок</a></div>
+          <div class="header__burger"><span></span><span></span><span></span></div>
         </div>
-        <div class="header__burger"><span></span><span></span><span></span></div>
       </div>
-      <div class="header-mob-menu"></div>
+      <div class="header__mob-menu"></div>
     </header>
     <main>
       <section class="main">
@@ -74,7 +74,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__wrapper container">
           <h2 class="_h2" data-aos="fade-up">Наши услуги</h2>
           <div class="services__content">
@@ -146,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="cost">
+      <section class="cost" id="cost">
         <div class="cost__wrapper container">
           <h2 class="_h2" data-aos="fade-up">Стоимость теплого пола под ключ с учетом материалов</h2>
           <div class="cost__tabs">
@@ -293,7 +293,7 @@
           </div>
         </div>
       </section>
-      <section class="feedback"> 
+      <section class="feedback" id="feedback"> 
         <div class="feedback__wrapper container"> 
           <h2 class="_h2" data-aos="fade-up">Клиенты о нас</h2>
           <div class="feedback__btn-right">
@@ -361,10 +361,10 @@
             </div>
             <div class="feedback__pagination swiper-pagination"></div>
           </div>
-          <div class="feedback__btn-wrapper _btn-wrapper" data-aos="fade-up"><a class="feedback__btn _btn" role="button">Оставить отзыв</a></div>
+          <div class="feedback__btn-wrapper _btn-wrapper" data-aos="fade-up"><a class="feedback__btn _btn modal-button-js" role="button" data-modal="feedback">Оставить отзыв</a></div>
         </div>
       </section>
-      <section class="examples container">
+      <section class="examples container" id="examples">
         <div class="examples__header">
           <h2 class="_h2" data-aos="fade-up">Примеры наших работ</h2>
           <div class="examples__subtitle" data-aos="fade-up" data-aos-delay="50">Нас рекомендуют реальные клиенты</div>
@@ -806,7 +806,7 @@
           <p data-aos="fade-up" data-aos-delay="150">Нажимая на кнопку "Отправить", вы соглашаетесь на <span> <a class="privacy__btn" roll="button">обработку персональных данных</a></span></p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__wrapper container">
           <h2 class="_h2" data-aos="fade-up">Контакты</h2>
           <div class="contacts__content">
@@ -840,9 +840,9 @@
       </section>
     </main>
     <form class="callback__modal modal" action="">
-      <div class="callback__modal-content">
+      <div class="callback__modal-content modal__content">
         <div class="callback__modal-title">Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут</div>
-        <div class="callback__modal-close">
+        <div class="callback__modal-close modal__close">
           <svg class="icon icon_cross">
             <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
           </svg>
@@ -869,9 +869,9 @@
       </div>
     </form>
     <form class="feedback__modal modal" action="">
-      <div class="feedback__modal-content">
+      <div class="feedback__modal-content modal__content">
         <div class="feedback__modal-title">Оставьте отзыв о проделанной нами работе</div>
-        <div class="feedback__modal-close">
+        <div class="feedback__modal-close modal__close">
           <svg class="icon icon_cross">
             <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
           </svg>
@@ -980,7 +980,7 @@
     </div>
     <div class="services__tooltip">Зависит от необходимости подготовки основания, монтажа утеплителя и шага укладки труб</div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/script-min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/utils-min.js"></script>
     <script src="js/da-min.js"></script>
     <footer class="footer">

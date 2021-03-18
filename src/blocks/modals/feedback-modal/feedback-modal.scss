@@ -26,7 +26,7 @@
 		max-height: 650px;
 		border-radius: 2px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		animation: animatetop 0.4s;
+		animation: animateTop 0.4s;
 	}
 	&__modal-title {
 		font-weight: 700;
@@ -67,7 +67,7 @@
 	&__modal-btn {
 		margin-bottom: 12px;
 	}
-	@keyframes animatetop {
+	@keyframes animateTop {
 		from {
 			top: -300px;
 			opacity: 0;

@@ -126,12 +126,21 @@ section {
 }
 .modal._active {
 	display: flex;
-	transform: translate();
+	transform: translate(0, 0);
 }
 body.active {
 	overflow: hidden;
 }
-
+@keyframes animateTop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
 @media (max-width: $md1+px) {
 	.container {
 		max-width: 970px;
