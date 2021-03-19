@@ -22,7 +22,6 @@ import objectFitImages from 'object-fit-images';
 import svg4everybody from 'svg4everybody';
 
 // import InputNumber from './lib/inputNumber';
-import './components/form.js';
 import './components/header.js';
 import './components/accordion.js';
 import './components/modals.js';

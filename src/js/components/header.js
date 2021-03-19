@@ -7,20 +7,20 @@ function scrollFunction() {
 	let menuLink = document.querySelectorAll('.header__menu-item');
 	let menuBurger = document.querySelector('.header__burger');
 	if (document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
-		header.classList.add('_active');
-		headerLogoDesc.classList.add('_active');
-		headerLogoMob.classList.add('_active');
+		header.classList.add('_fixed');
+		headerLogoDesc.classList.add('_fixed');
+		headerLogoMob.classList.add('_fixed');
 		menuLink.forEach(item => {
-			item.classList.add('_active');
+			item.classList.add('_fixed');
 		});
-		menuBurger.classList.add('active');
+		menuBurger.classList.add('_fixed');
 	} else {
-		header.classList.remove('_active');
-		headerLogoDesc.classList.remove('_active');
-		headerLogoMob.classList.remove('_active');
+		header.classList.remove('_fixed');
+		headerLogoDesc.classList.remove('_fixed');
+		headerLogoMob.classList.remove('_fixed');
 		menuLink.forEach(item => {
-			item.classList.remove('_active');
+			item.classList.remove('_fixed');
 		});
-		menuBurger.classList.remove('active');
+		menuBurger.classList.remove('_fixed');
 	}
 }

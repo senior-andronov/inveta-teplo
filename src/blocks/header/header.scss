@@ -6,12 +6,15 @@
 	z-index: 9999;
 	// overflow: hidden;
 	transition: all 0.3s ease-in-out 0s;
-	&._active {
+	&._fixed {
 		position: fixed;
 		padding: 10px 0;
 		background-color: $white;
 		opacity: 1;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	&._active,
+	&._fixed {
 		.header__left-text,
 		.header__right-text {
 			p {
@@ -66,6 +69,11 @@
 			top: 0;
 			left: 0;
 		}
+	}
+	&__left-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	&__left-text > p {
 		color: $white;
@@ -172,7 +180,8 @@
 				top: calc(50% + 8px);
 			}
 		}
-		&.active {
+
+		&._fixed {
 			span {
 				background-color: $black;
 			}
@@ -216,6 +225,7 @@
 		opacity: 1;
 		visibility: visible;
 		transition: all 0.3s ease 0s;
+		&._fixed,
 		&._active {
 			opacity: 0;
 			visibility: hidden;
@@ -225,6 +235,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: all 0.3s ease 0s;
+		&._fixed,
 		&._active {
 			opacity: 1;
 			visibility: visible;

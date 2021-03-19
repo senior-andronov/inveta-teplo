@@ -1,12 +1,11 @@
 #feedback-modal.modal
-	form#form.modal__content(action="#")
+	form.modal__content
 		.modal__title Оставьте отзыв о проделанной нами работе
 		.modal__close
 			+icon('cross')
-		input#formName.modal__input._req(type="text" name="name" placeholder="Ваш имя")
-		input#formTel.modal__input._req(type="tel" name="tel" placeholder="Ваш телефон")
-		input#formEmail.modal__input._req._email(type="text" name="email" placeholder="Ваш email")
-		textarea#formMessage.modal__message._req(placeholder="Ваш отзыв" name="message")
+		input.modal__input(type="text" placeholder="Ваш имя" required)
+		input.modal__input(type="tel" placeholder="Ваш телефон" required)
+		textarea.modal__message(placeholder="Ваш отзыв" required)
 		button.modal__submit._btn(type="submit") ОТПРАВИТЬ
 		.modal__personal Нажимая кнопку “Отправить”, вы принимаете 
 			a.modal__button-js(roll="button" data-modal="privacy-modal") условия обработки персональных данных
