@@ -1,6 +1,5 @@
 :root {
 	scroll-behavior: smooth;
-	--animate-duration: 0.3s;
 	-webkit-appearance: none;
 }
 * {
@@ -27,6 +26,7 @@ aside {
 }
 html,
 body {
+	-webkit-appearance: none;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;

@@ -15,7 +15,7 @@ function scrollAnchors() {
 			}
 			document.querySelector(block).scrollIntoView({
 				behavior: 'smooth',
-				block: 'center',
+				// block: 'center',
 			})
 		})
 	})
