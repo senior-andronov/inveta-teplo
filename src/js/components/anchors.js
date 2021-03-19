@@ -5,7 +5,7 @@ function scrollAnchors() {
 	anchors.forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
 			e.preventDefault()
-
+			headerClick();
 			const block = anchor.getAttribute('href');
 			if (block == '#') return;
 			if (menuBurger.classList.contains('_active')) {
