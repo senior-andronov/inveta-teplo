@@ -31,6 +31,10 @@ const examplesTopOne = new Swiper('.examples__slider-top-one', {
 		el: '.examples__progressbar-one',
 		type: 'progressbar',
 	},
+	navigation: {
+		prevEl: '.examples__prev-one',
+		nextEl: '.examples__next-one',
+	},
 });
 const examplesBotOne = new Swiper('.examples__slider-bot-one', {
 	slidesPerView: 3,
@@ -56,6 +60,10 @@ const examplesTopTwo = new Swiper('.examples__slider-top-two', {
 	pagination: {
 		el: '.examples__progressbar-two',
 		type: 'progressbar',
+	},
+	navigation: {
+		prevEl: '.examples__prev-two',
+		nextEl: '.examples__next-two',
 	},
 });
 const examplesBotTwo = new Swiper('.examples__slider-bot-two', {
@@ -83,6 +91,10 @@ const examplesTopThree = new Swiper('.examples__slider-top-three', {
 		el: '.examples__progressbar-three',
 		type: 'progressbar',
 	},
+	navigation: {
+		prevEl: '.examples__prev-three',
+		nextEl: '.examples__next-three',
+	},
 });
 const examplesBotThree = new Swiper('.examples__slider-bot-three', {
 	slidesPerView: 3,
@@ -109,6 +121,10 @@ const examplesTopFour = new Swiper('.examples__slider-top-four', {
 		el: '.examples__progressbar-four',
 		type: 'progressbar',
 	},
+	navigation: {
+		prevEl: '.examples__prev-four',
+		nextEl: '.examples__next-four',
+	},
 });
 const examplesBotFour = new Swiper('.examples__slider-bot-four', {
 	slidesPerView: 3,
@@ -134,6 +150,10 @@ const examplesTopFive = new Swiper('.examples__slider-top-five', {
 	pagination: {
 		el: '.examples__progressbar-five',
 		type: 'progressbar',
+	},
+	navigation: {
+		prevEl: '.examples__prev-five',
+		nextEl: '.examples__next-five',
 	},
 });
 const examplesBotFive = new Swiper('.examples__slider-bot-five', {

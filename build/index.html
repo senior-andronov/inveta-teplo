@@ -463,6 +463,8 @@
                     <div class="examples__slider-bot-image"> <img src="img/content/examples/examples-1/8-min.jpg" alt="Пример работы" loading="lazy"></div>
                   </div>
                 </div>
+                <div class="examples__prev-one"></div>
+                <div class="examples__next-one"></div>
               </div>
             </div>
           </div>
@@ -524,6 +526,8 @@
                     <div class="examples__slider-bot-image"> <img src="img/content/examples/examples-2/8-min.jpg" alt="Пример работы" loading="lazy"></div>
                   </div>
                 </div>
+                <div class="examples__prev-two"></div>
+                <div class="examples__next-two"></div>
               </div>
             </div>
             <div class="examples__info" data-aos="fade-left"> 
@@ -619,6 +623,8 @@
                     <div class="examples__slider-bot-image"> <img src="img/content/examples/examples-3/7-min.jpg" alt="Пример работы" loading="lazy"></div>
                   </div>
                 </div>
+                <div class="examples__prev-three"></div>
+                <div class="examples__next-three"></div>
               </div>
             </div>
           </div>
@@ -674,6 +680,8 @@
                     <div class="examples__slider-bot-image"> <img src="img/content/examples/examples-4/7-min.jpg" alt="Пример работы" loading="lazy"></div>
                   </div>
                 </div>
+                <div class="examples__prev-four"></div>
+                <div class="examples__next-four"></div>
               </div>
             </div>
             <div class="examples__info" data-aos="fade-left"> 
@@ -798,6 +806,8 @@
                     <div class="examples__slider-bot-image"> <img src="img/content/examples/examples-5/12-min.jpg" alt="Пример работы" loading="lazy"></div>
                   </div>
                 </div>
+                <div class="examples__prev-five"></div>
+                <div class="examples__next-five"></div>
               </div>
             </div>
           </div>
@@ -870,52 +880,6 @@
         </div>
       </section>
     </main>
-    <div class="modal" id="callback-modal">
-      <form class="modal__content">
-        <div class="modal__title">Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут</div>
-        <div class="modal__close">
-          <svg class="icon icon_cross">
-            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
-          </svg>
-        </div>
-        <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
-        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
-        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
-      </form>
-      <div class="modal__overflow"></div>
-    </div>
-    <div class="modal" id="pricelist-modal">
-      <form class="modal__content">
-        <div class="modal__title">Оставьте контактные данные</div>
-        <div class="modal__subtitle">И мы подготовим смету проекта</div>
-        <div class="modal__close">
-          <svg class="icon icon_cross">
-            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
-          </svg>
-        </div>
-        <input class="modal__input" type="text" name="name" placeholder="Ваш имя" required>
-        <input class="modal__input" type="tel" name="phone" placeholder="Ваш телефон" required>
-        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
-        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
-      </form>
-      <div class="modal__overflow"></div>
-    </div>
-    <div class="modal" id="feedback-modal">
-      <form class="modal__content">
-        <div class="modal__title">Оставьте отзыв о проделанной нами работе</div>
-        <div class="modal__close">
-          <svg class="icon icon_cross">
-            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
-          </svg>
-        </div>
-        <input class="modal__input" type="text" placeholder="Ваш имя" required>
-        <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
-        <textarea class="modal__message" placeholder="Ваш отзыв" required></textarea>
-        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
-        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
-      </form>
-      <div class="modal__overflow"></div>
-    </div>
     <div class="modal" id="privacy-modal">
       <form class="modal__content">
         <div class="modal__close">
@@ -986,6 +950,52 @@
           <li class="modal__item">В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</li>
           <li class="modal__item">Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу http://inveta-teplo.ru/policy.</li>
         </ol>
+      </form>
+      <div class="modal__overflow"></div>
+    </div>
+    <div class="modal" id="callback-modal">
+      <form class="modal__content">
+        <div class="modal__title">Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут</div>
+        <div class="modal__close">
+          <svg class="icon icon_cross">
+            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
+          </svg>
+        </div>
+        <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
+        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
+        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
+      </form>
+      <div class="modal__overflow"></div>
+    </div>
+    <div class="modal" id="pricelist-modal">
+      <form class="modal__content">
+        <div class="modal__title">Оставьте контактные данные</div>
+        <div class="modal__subtitle">И мы подготовим смету проекта</div>
+        <div class="modal__close">
+          <svg class="icon icon_cross">
+            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
+          </svg>
+        </div>
+        <input class="modal__input" type="text" name="name" placeholder="Ваш имя" required>
+        <input class="modal__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
+        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
+      </form>
+      <div class="modal__overflow"></div>
+    </div>
+    <div class="modal" id="feedback-modal">
+      <form class="modal__content">
+        <div class="modal__title">Оставьте отзыв о проделанной нами работе</div>
+        <div class="modal__close">
+          <svg class="icon icon_cross">
+            <use xlink:href="img/svg/symbol/sprite.svg#cross"></use>
+          </svg>
+        </div>
+        <input class="modal__input" type="text" placeholder="Ваш имя" required>
+        <input class="modal__input" type="tel" placeholder="Ваш телефон" required>
+        <textarea class="modal__message" placeholder="Ваш отзыв" required></textarea>
+        <button class="modal__submit _btn" type="submit">ОТПРАВИТЬ</button>
+        <div class="modal__personal">Нажимая кнопку “Отправить”, вы принимаете <a class="modal__button-js" roll="button" data-modal="privacy-modal">условия обработки персональных данных</a></div>
       </form>
       <div class="modal__overflow"></div>
     </div>

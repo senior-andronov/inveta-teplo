@@ -11,11 +11,13 @@ function modal() {
 	function showModal(parent) {
 		const content = parent.querySelector('.modal__content'),
 			overflow2 = parent.querySelector('.modal__overflow');
+		addClassBody();
+
 		parent.classList.add('_active');
 		overflow2.classList.add('_active');
 		animateCSS(overflow2, 'animateFadeIn');
 		animateCSS(content, 'animateTop');
-		addClassBody();
+
 	}
 
 	function closeModal() {
@@ -27,11 +29,13 @@ function modal() {
 		modalActiveContent.addEventListener('animationend', () => {
 			parent.classList.remove('_active');
 			modalActiveOverflow.classList.remove('_active');
+			addClassBody();
 		}, { once: true })
-		addClassBody();
+
 	}
 
 	function addClassBody() {
+		if (document.querySelector('.modal._active')) return;
 		(document.body.classList.contains('active')) ? document.body.classList.remove('active') : document.body.classList.add('active')
 	}
 

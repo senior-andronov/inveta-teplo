@@ -151,17 +151,40 @@
 	&__progressbar-five {
 		display: none;
 	}
-	// .swiper-pagination-progressbar {
-	// 	position: absolute;
-	// 	background: red;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	z-index: 99999;
-	// }
-	// .swiper-pagination-progressbar-fill {
-	// 	background: green;
-	// }
+	&__prev-one,
+	&__prev-two,
+	&__prev-three,
+	&__prev-four,
+	&__prev-five,
+	&__next-one,
+	&__next-two,
+	&__next-three,
+	&__next-four,
+	&__next-five {
+		display: block;
+		position: absolute;
+		width: 173px;
+		height: 100px;
+		bottom: 0;
+		z-index: 99999;
+		cursor: pointer;
+	}
+	&__prev-one,
+	&__prev-two,
+	&__prev-three,
+	&__prev-four,
+	&__prev-five {
+		left: 0;
+	}
+	&__next-one,
+	&__next-two,
+	&__next-three,
+	&__next-four,
+	&__next-five {
+		right: 0;
+	}
 }
+
 .swiper-pagination-progressbar {
 	top: 96% !important;
 }
