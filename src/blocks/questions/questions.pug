@@ -3,9 +3,9 @@ section.questions._ibg(style="background-image: url('img/content/questions/quest
 		h2._h2(data-aos='fade-up') Остались вопросы?
 		.questions__subtitle(data-aos='fade-up', data-aos-delay='50') Мы перезвоним в течение 5 минут
 		form(action="")
-			input.questions__input(type="tel" placeholder="Ваш телефон" data-aos='fade-up', data-aos-delay='50')
+			input.modal__input(type="tel" placeholder="Ваш телефон" data-aos='fade-up', data-aos-delay='50')
 			.questions__btn-wrapper._btn-wrapper(data-aos='fade-up', data-aos-delay='100')
-				.questions__btn._btn ОТПРАВИТЬ
+				button.modal__submit._btn(type="submit") ОТПРАВИТЬ
 		p(data-aos='fade-up', data-aos-delay='150') Нажимая на кнопку "Отправить", вы соглашаетесь на 
 			span 
-				a.privacy__btn.modal-button-js(roll="button" data-modal="privacy-modal") обработку персональных данных
+				a.privacy__btn.modal__button-js(roll="button" data-modal="privacy-modal") обработку персональных данных

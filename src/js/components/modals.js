@@ -1,5 +1,5 @@
 function modal() {
-	const btns = document.querySelectorAll('.modal-button-js'),
+	const btns = document.querySelectorAll('.modal__button-js'),
 		close = document.querySelectorAll('.modal__close'),
 		overflow = document.querySelectorAll('.modal__overflow');
 

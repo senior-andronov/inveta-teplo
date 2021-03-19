@@ -1,17 +1,19 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', function () {
-	const formPricelist = document.getElementById('pricelistForm');
-	formPricelist.addEventListener('submit', formSend);
+	const form = document.getElementById('form');
+	form.addEventListener('submit', formSend);
 
 	async function formSend(e) {
 		e.preventDefault();
 
-		let error = formValidate(formPricelist);
+		let error = formValidate(form);
 
-		let formData = new FormData(formPricelist);
+		let formData = new FormData(form);
 		formData.append('image', formImage.files[0]);
 
 		if (error === 0) {
-			formPricelist.classList.add('_sending');
+			form.classList.add('_sending');
 			let response = await fetch('sendmail.php', {
 				method: 'POST',
 				body: formData
@@ -20,17 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				let result = await response.json();
 				alert(result.message);
 				formPreview.innerHTML = '';
-				formPricelist.reset();
-				formPricelist.classList.remove('._sending');
+				form.reset();
+				form.classList.remove('_sending');
 			} else {
 				alert("Ошибка");
-				formPricelist.classList.remove('._sending');
+				form.classList.remove('_sending');
 			}
 		} else {
 			alert('Заполните обязательные поля');
 		}
+
 	}
-	function formValidate(formPricelist) {
+
+
+	function formValidate(form) {
 		let error = 0;
 		let formReq = document.querySelectorAll('._req');
 
@@ -63,7 +68,41 @@ document.addEventListener('DOMContentLoaded', function () {
 		input.parentElement.classList.remove('_error');
 		input.classList.remove('_error');
 	}
+	//Функция теста email
 	function emailTest(input) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+	}
+
+	//Получаем инпут file в переменную
+	const formImage = document.getElementById('formImage');
+	//Получаем див для превью в переменную
+	const formPreview = document.getElementById('formPreview');
+
+	//Слушаем изменения в инпуте file
+	formImage.addEventListener('change', () => {
+		uploadFile(formImage.files[0]);
+	});
+
+	function uploadFile(file) {
+		// провераяем тип файла
+		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+			alert('Разрешены только изображения.');
+			formImage.value = '';
+			return;
+		}
+		// проверим размер файла (<2 Мб)
+		if (file.size > 2 * 1024 * 1024) {
+			alert('Файл должен быть менее 2 МБ.');
+			return;
+		}
+
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+		};
+		reader.onerror = function (e) {
+			alert('Ошибка');
+		};
+		reader.readAsDataURL(file);
 	}
 });

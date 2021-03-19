@@ -1,85 +1,50 @@
-[data-aos].aos-init {
-	animation-timing-function: cubic-bezier(0.6, 0, 0.25, 1) !important;
+
+.animateTop {
+	animation: animateTop 0.3s ease;
+}
+.animateUp {
+	animation: animateUp 0.3s ease;
+}
+.animateFadeIn {
+	animation: animateFadeIn 0.3s ease;
+}
+.animateFadeOut {
+	animation: animateFadeOut 0.3s ease;
 }
 
-// [data-aos] {
-//   visibility: hidden;
-// }
-
-// [data-aos].animated {
-//   visibility: visible;
-// }
-
-$a-distance: 20px !default;
-
-.a-fade-up {
-	animation-name: a-fade-up;
-	animation-direction: 0.3s;
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.6, 0, 0.25, 1);
-}
-
-.a-delay-200 {
-	animation-delay: 0.5s;
-}
-
-@keyframes a-fade-up {
+@keyframes animateFadeIn {
 	from {
 		opacity: 0;
-		transform: translateY(20px);
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }
-
-// Анимация вращния
-@keyframes rotate {
+@keyframes animateFadeOut {
 	from {
+		opacity: 1;
 	}
 	to {
-		transform: translateY(-50%) rotate(360deg);
-	}
-}
-
-// Анимация исчезновения
-@keyframes hide {
-	0% {
-	}
-	33% {
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(-100%);
 		opacity: 0;
 	}
 }
-
-// Анимация блока с видео
-@keyframes video-box {
+@keyframes animateTop {
 	from {
-		height: calc(100vh - 186px);
+		top: -300px;
+		opacity: 0;
 	}
 	to {
-		height: 576px;
+		top: 0;
+		opacity: 1;
 	}
 }
-
-@keyframes video-hero {
+@keyframes animateUp {
 	from {
-		margin-top: -186px;
+		top: 0;
+		opacity: 1;
 	}
 	to {
-		margin-top: 0;
-	}
-}
-
-@keyframes video-header {
-	from {
-		transform: translateY(-100%);
-	}
-	to {
-		transform: translateY(0);
+		top: -300px;
+		opacity: 0;
 	}
 }

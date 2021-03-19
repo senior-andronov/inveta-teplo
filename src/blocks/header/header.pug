@@ -10,15 +10,15 @@ header.header
 		nav.header__menu(data-da=".header__mob-menu, 1192, 1")
 			ul.header__menu-list
 				li.header__menu-link
-					a(href="#services") Услуги
+					a.header__menu-item(href="#services") Услуги
 				li.header__menu-link
-					a(href="#cost") Цены
+					a.header__menu-item(href="#cost") Цены
 				li.header__menu-link
-					a(href="#feedback") Отзывы
+					a.header__menu-item(href="#feedback") Отзывы
 				li.header__menu-link
-					a(href="#examples") Наши работы
+					a.header__menu-item(href="#examples") Наши работы
 				li.header__menu-link
-					a(href="#contacts") Контакты
+					a.header__menu-item(href="#contacts") Контакты
 		.header__right
 			a.header__right-whatsapp(href="https://wa.me/79122958282")
 				+icon('whatsapp')
@@ -27,7 +27,7 @@ header.header
 				a.header__right-phone(href="tel:+73432264839") 
 					+icon('phone')
 					p +7 343 226-48-39
-				a.header__right-callback.modal-button-js(roll="button" data-modal='callback-modal') Обратный звонок
+				a.header__right-callback.modal__button-js(roll="button" data-modal='callback-modal') Обратный звонок
 			.header__burger
 				span
 				span

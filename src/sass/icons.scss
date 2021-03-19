@@ -25,7 +25,7 @@
 	stroke: $accent;
 	transition: all 0.3s ease 0s;
 	&:hover {
-		stroke: $hover;
+		stroke: $black;
 	}
 }
 .icon_next {
@@ -67,5 +67,4 @@
 	transition: all 0.3s ease 0s;
 	margin-bottom: 5px;
 	fill: $accent;
-
 }

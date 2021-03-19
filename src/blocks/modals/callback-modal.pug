@@ -1,0 +1,10 @@
+#callback-modal.modal
+	form.modal__content
+		.modal__title Оставьте свой номер телефона и мы перезвоним вам в течение 7 минут
+		.modal__close
+			+icon('cross')
+		input.modal__input(type="tel" placeholder="Ваш телефон" required)
+		button.modal__submit._btn(type="submit") ОТПРАВИТЬ
+		.modal__personal Нажимая кнопку “Отправить”, вы принимаете 
+			a.modal__button-js(roll="button" data-modal="privacy-modal") условия обработки персональных данных
+	.modal__overflow

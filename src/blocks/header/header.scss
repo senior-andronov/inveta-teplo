@@ -1,18 +1,26 @@
 .header {
 	padding: 20px 0;
 	position: absolute;
-	width: 100%;
 	top: 0;
-	left: 0;
+	width: 100%;
 	z-index: 9999;
 	// overflow: hidden;
+	transition: all 0.3s ease-in-out 0s;
 	&._active {
+		position: fixed;
+		padding: 10px 0;
+		background-color: $white;
+		opacity: 1;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		.header__left-text,
 		.header__right-text {
 			p {
 				color: $black;
 				transition: all 1s ease 0s;
 			}
+		}
+		.header__menu-item {
+			color: $black;
 		}
 	}
 	&__wrapper {
@@ -41,9 +49,9 @@
 		&:last-child {
 			margin-right: 0;
 		}
-		a {
-			color: $white;
-		}
+	}
+	&__menu-item {
+		color: $white;
 	}
 	&__logo {
 		margin-right: 20px;
@@ -164,6 +172,11 @@
 				top: calc(50% + 8px);
 			}
 		}
+		&.active {
+			span {
+				background-color: $black;
+			}
+		}
 		&._active {
 			span {
 				background-color: $black;
@@ -193,6 +206,7 @@
 		transition: all 0.3s ease 0s;
 		// opacity: 0;
 		background-color: $white;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		&._active {
 			transform: translateY(0);
 			opacity: 1;
@@ -217,6 +231,7 @@
 		}
 	}
 }
+
 @media (max-width: $md1+px) {
 	.header {
 		// background-color: $white;
