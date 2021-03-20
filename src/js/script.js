@@ -12,7 +12,8 @@
 // import 'whatwg-fetch';
 // import './lib/polyfills.js';
 
-
+// import PhotoSwipe from 'photoswipe';
+// import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 
 
 // import Rellax from 'rellax';
@@ -35,6 +36,7 @@ import './components/anchors.js';
 import './components/burger.js';
 import './components/marquiz.js';
 // import './components/aos.js';
+// import './components/photoswipe.js';
 
 
 
