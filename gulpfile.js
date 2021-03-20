@@ -14,35 +14,35 @@ const { serve } = require('./gulp/tasks/serve');
 const { watch } = require('./gulp/tasks/watch');
 
 function dev() {
-  return new Promise(gulp.series(
-    clear,
-    gulp.parallel(
-      html,
-      cssDev,
-      jsDev,
-      imgDev,
-      svg,
-      fonts,
-      video,
-      json
-    )
-  ));
+	return new Promise(gulp.series(
+		clear,
+		gulp.parallel(
+			html,
+			cssDev,
+			jsDev,
+			imgDev,
+			svg,
+			fonts,
+			video,
+			json
+		)
+	));
 }
 
 function build() {
-  return new Promise(gulp.series(
-    clear,
-    gulp.parallel(
-      html,
-      cssBuild,
-      jsBuild,
-      imgBuild,
-      svg,
-      fonts,
-      video,
-      json
-    )
-  ));
+	return new Promise(gulp.series(
+		clear,
+		gulp.parallel(
+			html,
+			cssBuild,
+			jsBuild,
+			imgBuild,
+			svg,
+			fonts,
+			video,
+			json
+		)
+	));
 }
 
 exports.clear = clear;
@@ -64,6 +64,6 @@ exports.dev = dev;
 exports.build = build;
 
 exports.default = gulp.series(
-  dev,
-  gulp.parallel(serve, watch)
+	dev,
+	gulp.parallel(serve, watch)
 );

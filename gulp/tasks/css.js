@@ -5,6 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const minifyCSS = require('gulp-minify-css');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+// const webpcss = require('gulp-webpcss');
 
 sass.compiler = require('node-sass');
 
@@ -17,6 +18,12 @@ function cssDev() {
 		.pipe(postcss([autoprefixer()]))
 		.pipe(sourcemaps.write())
 		.pipe(minifyCSS())
+		// .pipe(webpcss(
+		// 	{
+		// 		webpClass: "._webp",
+		// 		noWebpClass: "._no-webp"
+		// 	}
+		// ))
 		.pipe(gulp.dest(path.output + 'css'))
 		.pipe(browserSync.stream());
 }
@@ -26,6 +33,12 @@ function cssBuild() {
 		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(postcss([autoprefixer()]))
 		.pipe(minifyCSS())
+		// .pipe(webpcss(
+		// 	{
+		// 		webpClass: "._webp",
+		// 		noWebpClass: "._no-webp"
+		// 	}
+		// ))
 		.pipe(gulp.dest(path.output + 'css'));
 }
 
