@@ -1,5 +1,4 @@
-import tippy, { followCursor } from 'tippy.js';
-
+import tippy from 'tippy.js';
 
 const servicesTooltip = document.querySelector('.services__tooltip');
 servicesTooltip.style.display = 'block';

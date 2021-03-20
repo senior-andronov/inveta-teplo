@@ -1,3 +1,6 @@
+import Swiper, { Navigation, Pagination, Controller } from 'swiper';
+Swiper.use([Navigation, Pagination, Controller]);
+
 const feedback = new Swiper('.feedback__slider', {
 	slidesPerView: 'auto',
 	spaceBetween: 30,

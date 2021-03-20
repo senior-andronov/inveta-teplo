@@ -12,8 +12,8 @@
 // import 'whatwg-fetch';
 // import './lib/polyfills.js';
 
-import tippy from 'tippy.js';
-import IMask from 'imask';
+
+
 
 // import Rellax from 'rellax';
 // import '../../node_modules/focus-visible/dist/focus-visible.js';
@@ -22,6 +22,7 @@ import objectFitImages from 'object-fit-images';
 import svg4everybody from 'svg4everybody';
 
 // import InputNumber from './lib/inputNumber';
+import './components/dynamicAdapt.js';
 import './components/header.js';
 import './components/accordion.js';
 import './components/modals.js';
@@ -33,6 +34,8 @@ import './components/tippy.js';
 import './components/anchors.js';
 import './components/burger.js';
 import './components/marquiz.js';
+import './components/aos.js';
+
 
 
 
