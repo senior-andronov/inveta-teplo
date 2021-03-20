@@ -14,7 +14,6 @@ function jsDev() {
 			context: pathSrc.resolve(__dirname, '../../src/js/'),
 			entry: {
 				script: './script.js',
-				aos: './aos.js',
 			},
 			output: {
 				filename: '[name].js',
@@ -43,7 +42,6 @@ function jsBuild() {
 			context: pathSrc.resolve(__dirname, '../../src/js/'),
 			entry: {
 				script: './script.js',
-				aos: './aos.js',
 			},
 			output: {
 				filename: '[name].js'
