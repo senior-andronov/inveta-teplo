@@ -3,8 +3,19 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 9995;
 	transition: all 0.3s ease 0s;
+	z-index: 9995;
+	// position: sticky;
+	// top: 0;
+	// padding: 20px 0;
+	// background: #013543;
+	// color: #ffffff;
+	// z-index: 100;
+	// transition: 0.2s ease;
+	// transform: translateY(0%);
+	// &.hide {
+	// 	transform: translateY(-100%);
+	// }
 	&._fixed {
 		position: fixed;
 		padding: 10px 0;
@@ -321,14 +332,14 @@
 		&__mail {
 			@include font-size(24, 18);
 		}
-	}
-}
-@media (max-width: $md4+px) {
-	.header {
 		&__logo {
 			width: 90px;
 			height: 40px;
 		}
+	}
+}
+@media (max-width: $md4+px) {
+	.header {
 		&__mob-menu {
 			padding-top: 80px;
 		}

@@ -1,11 +1,8 @@
 .main {
-	width: 100%;
+	padding: 200px 0;
 	background: url("../img/content/main/main-bg.jpg") no-repeat right/cover;
-	&__wrapper {
-		height: 100vh;
-	}
 	&__content {
-		padding-top: 300px;
+		margin: auto 0;
 	}
 	h1 {
 		@include font-size(36, 18);
@@ -26,10 +23,20 @@
 		margin: 0;
 	}
 }
+@media (max-width: $md1 + px) {
+	.main {
+		padding: 150px 0;
+	}
+}
+@media (max-width: $md2 + px) {
+	.main {
+		padding: 150px 0 100px;
+	}
+}
 @media (max-width: $md3 + px) {
 	.main {
+		padding: 120px 0 60px;
 		&__content {
-			padding-top: 250px;
 			text-align: center;
 		}
 		h1 {
@@ -42,8 +49,6 @@
 }
 @media (max-width: $md4 + px) {
 	.main {
-		&__content {
-			padding-top: 200px;
-		}
+		padding: 100px 0 60px;
 	}
 }
