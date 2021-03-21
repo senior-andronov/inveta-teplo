@@ -18,5 +18,5 @@ section#contacts.contacts
 						h3._h3 Время работы
 						.contacts__subtitle Ежедневно 
 						p с 9:00 до 21:00
-			.contacts__map
-				script(async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c9028c1f29faf2c15ba0acdd91c23a94b4be005004ed9d6438542ec11d9ddde&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true")
+			#map_container.contacts__map
+				script#ymap_lazy(async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c9028c1f29faf2c15ba0acdd91c23a94b4be005004ed9d6438542ec11d9ddde&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true")

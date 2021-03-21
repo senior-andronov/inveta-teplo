@@ -1,6 +1,4 @@
 .contacts {
-	&__wrapper {
-	}
 	h2 {
 		margin: 0 0 60px 0;
 		text-align: left;
@@ -81,6 +79,10 @@
 		// max-width: 780px;
 		width: 100%;
 		overflow: hidden;
+		height: auto;
+		padding: 0;
+		background-image: url("../img/general/map-static.jpg");
+		background-position: center center;
 	}
 	p {
 		font-weight: 700;

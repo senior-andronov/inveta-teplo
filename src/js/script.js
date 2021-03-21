@@ -35,6 +35,7 @@ import './components/tippy.js';
 import './components/anchors.js';
 import './components/burger.js';
 import './components/marquiz.js';
+import './components/map.js';
 // import './components/aos.js';
 // import './components/photoswipe.js';
 
