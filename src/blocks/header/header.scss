@@ -214,7 +214,7 @@
 		display: none;
 		position: fixed;
 		width: 100%;
-		max-height: 370px;
+		// max-height: 370px;
 		height: 100%;
 		padding: 30px;
 		top: 110px;
@@ -308,7 +308,7 @@
 			@include font-size(24, 18);
 		}
 		&__mob-menu {
-			max-height: 440px;
+			// max-height: 440px;
 		}
 	}
 }
@@ -335,8 +335,7 @@
 		}
 
 		&__mob-menu {
-			max-height: 560px;
-			top: 80px;
+			max-height: 100%;
 		}
 	}
 }
@@ -354,7 +353,7 @@
 @media (max-height: 400px) {
 	.header {
 		&__mob-menu {
-			max-height: 300px;
+			// max-height: 300px;
 		}
 	}
 }
