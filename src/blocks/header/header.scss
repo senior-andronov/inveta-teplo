@@ -25,6 +25,7 @@
 	}
 	&._active,
 	&._fixed {
+		background-color: $white;
 		.header__left-text,
 		.header__right-text {
 			p {
@@ -52,10 +53,6 @@
 	&__menu-list {
 		display: flex;
 		align-items: center;
-		// transform: translate(100%);
-		&._active {
-			// transform: translateX(0);
-		}
 	}
 	&__menu-link {
 		margin-right: 24px;
@@ -190,7 +187,6 @@
 				top: calc(50% + 8px);
 			}
 		}
-
 		&._fixed {
 			span {
 				background-color: $black;
@@ -216,19 +212,23 @@
 	&__mob-menu {
 		transform: translateY(-130%);
 		display: none;
-		position: absolute;
+		position: fixed;
 		width: 100%;
-		min-height: 350px;
-		top: 0;
+		max-height: 370px;
+		height: 100%;
+		padding: 30px;
+		top: 110px;
 		left: 0;
 		z-index: -1;
 		transition: all 0.3s ease 0s;
-		// opacity: 0;
+		overflow: auto;
+		opacity: 0;
 		background-color: $white;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		&._active {
 			transform: translateY(0);
 			opacity: 1;
+			overflow: auto;
 		}
 	}
 	&__logo-desc {
@@ -266,7 +266,6 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			padding: 110px 10px 40px 10px;
 		}
 		&__menu-list {
 			flex-direction: column;
@@ -294,7 +293,6 @@
 		&__burger {
 			margin-left: 20px;
 		}
-
 		&__right-text {
 			align-items: center;
 			margin-top: 32px;
@@ -308,6 +306,9 @@
 		&__right-callback {
 			margin-top: 10px;
 			@include font-size(24, 18);
+		}
+		&__mob-menu {
+			max-height: 440px;
 		}
 	}
 }
@@ -332,16 +333,28 @@
 		&__mail {
 			@include font-size(24, 18);
 		}
-		&__logo {
-			width: 90px;
-			height: 40px;
+
+		&__mob-menu {
+			max-height: 560px;
+			top: 80px;
 		}
 	}
 }
 @media (max-width: $md4+px) {
 	.header {
+		&__logo {
+			width: 90px;
+			height: 40px;
+		}
 		&__mob-menu {
-			padding-top: 80px;
+			// padding-top: 80px;
+		}
+	}
+}
+@media (max-height: 400px) {
+	.header {
+		&__mob-menu {
+			max-height: 300px;
 		}
 	}
 }
