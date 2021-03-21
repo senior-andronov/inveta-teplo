@@ -214,10 +214,10 @@
 		display: none;
 		position: fixed;
 		width: 100%;
-		// max-height: 370px;
+		max-height: 370px;
 		height: 100%;
 		padding: 30px;
-		top: 110px;
+		top: 90px;
 		left: 0;
 		z-index: -1;
 		transition: all 0.3s ease 0s;
@@ -228,7 +228,6 @@
 		&._active {
 			transform: translateY(0);
 			opacity: 1;
-			overflow: auto;
 		}
 	}
 	&__logo-desc {
@@ -255,7 +254,6 @@
 
 @media (max-width: $md1+px) {
 	.header {
-		// background-color: $white;
 		&__burger {
 			display: block;
 		}
@@ -308,7 +306,7 @@
 			@include font-size(24, 18);
 		}
 		&__mob-menu {
-			// max-height: 440px;
+			max-height: 440px;
 		}
 	}
 }
@@ -333,9 +331,8 @@
 		&__mail {
 			@include font-size(24, 18);
 		}
-
 		&__mob-menu {
-			max-height: 100%;
+			max-height: 540px;
 		}
 	}
 }
@@ -346,14 +343,9 @@
 			height: 40px;
 		}
 		&__mob-menu {
-			// padding-top: 80px;
-		}
-	}
-}
-@media (max-height: 400px) {
-	.header {
-		&__mob-menu {
-			// max-height: 300px;
+			top: 60px;
+			max-height: 480px;
+			padding-top: 0;
 		}
 	}
 }
