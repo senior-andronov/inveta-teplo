@@ -12,12 +12,10 @@ function modal() {
 		const content = parent.querySelector('.modal__content'),
 			overflow2 = parent.querySelector('.modal__overflow');
 		addClassBody();
-
 		parent.classList.add('_active');
 		overflow2.classList.add('_active');
 		animateCSS(overflow2, 'animateFadeIn');
 		animateCSS(content, 'animateTop');
-
 	}
 
 	function closeModal() {

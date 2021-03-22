@@ -13,6 +13,7 @@ function scrollFunction() {
 		menuLink.forEach(item => {
 			item.classList.add('_fixed');
 		});
+		animateCSS(header, 'animateTop');
 		menuBurger.classList.add('_fixed');
 	} else {
 		header.classList.remove('_fixed');
@@ -22,5 +23,16 @@ function scrollFunction() {
 			item.classList.remove('_fixed');
 		});
 		menuBurger.classList.remove('_fixed');
+		animateCSS(header, 'animateUp');
 	}
+}
+
+function animateCSS(element, animation) {
+	const animationName = animation;
+	const node = (element.nodeType === 1) ? element : document.querySelector(element);
+	node.classList.add(...animationName.split(' '));
+	function handleAnimationEnd() {
+		node.classList.remove(...animationName.split(' '));
+	}
+	node.addEventListener('animationend', handleAnimationEnd, { once: true });
 }
