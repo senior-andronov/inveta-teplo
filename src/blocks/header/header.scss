@@ -5,6 +5,7 @@
 	width: 100%;
 	transition: all 0.3s ease 0s;
 	z-index: 9995;
+
 	// position: sticky;
 	// top: 0;
 	// padding: 20px 0;
@@ -21,6 +22,8 @@
 		padding: 10px 0;
 		background-color: $white;
 		opacity: 1;
+		// transform: translateY(-100%) !important;
+		transition: all 0.3s ease 0s;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 	&._active,
@@ -45,6 +48,7 @@
 	}
 	&__left {
 		display: flex;
+		align-items: center;
 	}
 	&__menu {
 		display: flex;
@@ -76,11 +80,6 @@
 			top: 0;
 			left: 0;
 		}
-	}
-	&__left-text {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 	}
 	&__left-text > p {
 		color: $white;
@@ -214,10 +213,10 @@
 		display: none;
 		position: fixed;
 		width: 100%;
-		max-height: 370px;
+		max-height: 430px;
 		height: 100%;
-		padding: 30px;
-		top: 90px;
+		padding: 95px 30px 30px;
+		top: 0;
 		left: 0;
 		z-index: -1;
 		transition: all 0.3s ease 0s;
@@ -306,7 +305,7 @@
 			@include font-size(24, 18);
 		}
 		&__mob-menu {
-			max-height: 440px;
+			max-height: 500px;
 		}
 	}
 }
@@ -332,7 +331,7 @@
 			@include font-size(24, 18);
 		}
 		&__mob-menu {
-			max-height: 540px;
+			max-height: 600px;
 		}
 	}
 }
@@ -343,9 +342,8 @@
 			height: 40px;
 		}
 		&__mob-menu {
-			top: 80px;
-			max-height: 480px;
-			padding-top: 0;
+			max-height: 540px;
+			padding-top: 60px;
 		}
 	}
 }

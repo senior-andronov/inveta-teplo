@@ -24,28 +24,3 @@ function scrollFunction() {
 		menuBurger.classList.remove('_fixed');
 	}
 }
-
-// function headerFixed() {
-// 	const mediaQuery = window.matchMedia('(min-width: 1024px)');
-// 	if (mediaQuery.matches) {
-// 		const header = document.querySelector('.header'),
-// 			offsetHeight = header.offsetHeight;
-
-// 		window.addEventListener('load', () => {
-// 			const height = window.innerHeight;
-// 			let lostY = 0;
-
-// 			document.addEventListener('scroll', () => {
-// 				if (lostY >= 900) {
-// 					if (window.scrollY > lostY) {
-// 						header.classList.add('hide');
-// 					} else {
-// 						if (window.scrollY > height || lostY < offsetHeight) header.classList.remove('hide');
-// 					}
-// 				}
-// 				lostY = window.scrollY;
-// 			});
-// 		});
-// 	}
-// }
-// headerFixed();
