@@ -30,7 +30,7 @@ function imgBuild() {
 		// )
 		.pipe(imagemin([
 			imagemin.gifsicle({ interlaced: true }),
-			imagemin.mozjpeg({ quality: 70, progressive: true }),
+			imagemin.mozjpeg({ quality: 100, progressive: true }),
 			imagemin.optipng({ optimizationLevel: 5 }),
 			imagemin.svgo({
 				plugins: [
