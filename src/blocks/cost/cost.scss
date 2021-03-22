@@ -11,11 +11,11 @@
 		&:active {
 			transform: scale(1.05);
 		}
-		// &._active {
-		// 	&:active {
-		// 		transform: scale(1);
-		// 	}
-		// }
+		&._active {
+			&:active {
+				transform: scale(1);
+			}
+		}
 	}
 	&__tabs-item {
 		color: $accent;

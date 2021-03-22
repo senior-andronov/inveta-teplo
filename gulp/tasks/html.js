@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const pug = require('gulp-pug');
 const rename = require('gulp-rename');
-// const webphtml = require('gulp-webp-html');
+const webphtml = require('gulp-webp-html');
 
 const path = require('../path');
 
@@ -12,7 +12,7 @@ function html() {
 			doctype: 'html',
 			pretty: true
 		}))
-		// .pipe(webphtml())
+		.pipe(webphtml())
 		.pipe(rename({ dirname: "" }))
 		.pipe(gulp.dest(path.output))
 		.pipe(browserSync.stream());
