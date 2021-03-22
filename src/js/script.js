@@ -19,25 +19,27 @@
 // import Rellax from 'rellax';
 // import '../../node_modules/focus-visible/dist/focus-visible.js';
 
+
+// import InputNumber from './lib/inputNumber';
+
+
 import objectFitImages from 'object-fit-images';
 import svg4everybody from 'svg4everybody';
 
-// import InputNumber from './lib/inputNumber';
 import './components/dynamicAdapt.js';
 import './components/header.js';
 import './components/accordion.js';
 import './components/modals.js';
-// import './components/video.js';
 import './components/mask.js';
 import './components/tabs.js';
 import './components/sliders.js';
 import './components/tippy.js';
-import './components/anchors.js';
 import './components/burger.js';
+import './components/anchors.js';
 import './components/marquiz.js';
 import './components/map.js';
 import './components/youtube.js';
-// import './components/aos.js';
+import './components/aos.js';
 // import './components/photoswipe.js';
 
 
