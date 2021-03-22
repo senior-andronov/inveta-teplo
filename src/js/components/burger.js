@@ -13,7 +13,9 @@ function scrollAnchors() {
 				menuBurger.classList.remove('_active')
 				menu.classList.remove('_active')
 				document.body.classList.remove('_lock');
+				// header.classList.remove('_active');
 			}
+
 			document.querySelector(block).scrollIntoView({
 				behavior: 'smooth',
 				// block: 'center',
@@ -32,10 +34,12 @@ let headerLogoMob = document.querySelector('.header__logo-mob');
 function burger() {
 	menuBurger.classList.toggle('_active');
 	menu.classList.toggle('_active');
-	headerMob.classList.toggle('_active');
-	headerLogoDesc.classList.toggle('_active');
-	headerLogoMob.classList.toggle('_active');
-	document.body.classList.toggle('_lock');
+	if (document.documentElement.clientWidth < 1192) {
+		headerMob.classList.toggle('_active');
+		headerLogoDesc.classList.toggle('_active');
+		headerLogoMob.classList.toggle('_active');
+		document.body.classList.toggle('_lock');
+	}
 }
 
 menuBurger.addEventListener('click', function () {
