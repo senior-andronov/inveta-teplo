@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const svgSprite = require('gulp-svg-sprite');
 const imagemin = require('gulp-imagemin');
-const imageminWebp = require('imagemin-webp');
+// const imageminWebp = require('imagemin-webp');
 
 
 
@@ -22,12 +22,12 @@ function imgBuild() {
 		path.input + 'img/**/*.*',
 		'!' + path.input + 'img/svg/*.svg'
 	])
-		.pipe(
-			imagemin([imageminWebp({
-				quality: 75
-			})
-			])
-		)
+		// .pipe(
+		// 	imagemin([imageminWebp({
+		// 		quality: 75
+		// 	})
+		// 	])
+		// )
 		.pipe(imagemin([
 			imagemin.gifsicle({ interlaced: true }),
 			imagemin.mozjpeg({ quality: 70, progressive: true }),
