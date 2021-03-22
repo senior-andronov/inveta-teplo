@@ -13,7 +13,6 @@ function scrollAnchors() {
 				menuBurger.classList.remove('_active')
 				menu.classList.remove('_active')
 				document.body.classList.remove('_lock');
-				// header.classList.remove('_active');
 			}
 			document.querySelector(block).scrollIntoView({
 				behavior: 'smooth',

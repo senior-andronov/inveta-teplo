@@ -23,7 +23,7 @@ function initYouTubeVideos() {
 		var div = document.createElement("div");
 		div.setAttribute("data-id", videoId);
 		var thumbNode = document.createElement("img");
-		thumbNode.src = "https://i.ytimg.com/vi/ID/hqdefault.jpg".replace(
+		thumbNode.src = "https://i.ytimg.com/vi/ID/sddefault.jpg".replace(
 			"ID",
 			videoId
 		);
