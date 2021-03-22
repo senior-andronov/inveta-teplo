@@ -5,9 +5,20 @@
 		justify-content: center;
 		margin-bottom: 50px;
 	}
+	&__tabs-item-wrapper {
+		transition: all 0.3s ease 0s;
+		margin-right: 10px;
+		&:active {
+			transform: scale(1.05);
+		}
+		// &._active {
+		// 	&:active {
+		// 		transform: scale(1);
+		// 	}
+		// }
+	}
 	&__tabs-item {
 		color: $accent;
-		margin-right: 10px;
 		padding: 14px 20px;
 		border: 2px solid $accent;
 		transition: all 0.3s ease 0s;
@@ -21,14 +32,6 @@
 		&._active {
 			color: $white;
 			background-color: $accent;
-		}
-		&:active {
-			transform: scale(1.05);
-		}
-		&._active {
-			&:active {
-				transform: scale(1);
-			}
 		}
 	}
 	&__content {
