@@ -33,6 +33,7 @@ function headerFixed() {
 	window.addEventListener('load', function () {
 		let height = window.innerHeight;
 		let lostY = 0;
+		if (pageYOffset > offsetHeight) { header.classList.add('_hide'); }
 		document.addEventListener('scroll', function () {
 			if (lostY >= 110) {
 				if (window.scrollY > lostY) {
