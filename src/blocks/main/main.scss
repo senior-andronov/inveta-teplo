@@ -23,19 +23,9 @@
 		margin: 0;
 	}
 }
-@media (max-width: $md1 + px) {
-	.main {
-		padding: 150px 0;
-	}
-}
-@media (max-width: $md2 + px) {
-	.main {
-		padding: 150px 0 100px;
-	}
-}
+
 @media (max-width: $md3 + px) {
 	.main {
-		padding: 120px 0 60px;
 		&__content {
 			text-align: center;
 		}
@@ -47,8 +37,4 @@
 		}
 	}
 }
-@media (max-width: $md4 + px) {
-	.main {
-		padding: 110px 0 60px;
-	}
-}
+

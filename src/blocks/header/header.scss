@@ -313,7 +313,7 @@
 			@include font-size(24, 18);
 		}
 		&__mob-menu {
-			max-height: 600px;
+			max-height: 100%;
 		}
 	}
 }
@@ -324,7 +324,7 @@
 			height: 40px;
 		}
 		&__mob-menu {
-			max-height: 550px;
+			// max-height: 550px;
 			padding-top: 70px;
 		}
 	}
