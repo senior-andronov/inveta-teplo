@@ -250,7 +250,7 @@
 			flex-direction: column;
 		}
 		&__menu-link {
-			@include font-size(32, 18);
+			@include font-size(32, 22);
 			@include line-height(36, 22);
 			margin-right: 0px;
 			margin-top: 32px;
@@ -297,7 +297,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin: 0 auto 18px auto;
+			margin: 20px auto 18px;
 			max-width: 345px;
 			width: 100%;
 			background-color: #f6f6f6;
