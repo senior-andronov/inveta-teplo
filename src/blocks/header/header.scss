@@ -8,6 +8,8 @@
 	&._hide {
 		transform: translateY(-100%) !important;
 	}
+	&._open-mobile-menu {
+	}
 	&._bg,
 	&._active {
 		background: $white;
@@ -36,7 +38,6 @@
 			visibility: visible;
 		}
 	}
-
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
