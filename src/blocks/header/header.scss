@@ -8,8 +8,7 @@
 	&._hide {
 		transform: translateY(-105%) !important;
 	}
-	&._open-mobile-menu {
-	}
+
 	&._bg,
 	&._active {
 		background: $white;
@@ -208,7 +207,7 @@
 		position: fixed;
 		width: 100%;
 		max-height: 430px;
-		height: 100%;
+		height: 100vh;
 		padding: 95px 30px 30px;
 		top: 0;
 		left: 0;
