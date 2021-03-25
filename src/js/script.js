@@ -35,13 +35,11 @@ import './components/tabs.js';
 import './components/sliders.js';
 import './components/tippy.js';
 import './components/burger.js';
-import './components/anchors.js';
 import './components/marquiz.js';
 import './components/map.js';
 import './components/youtube.js';
 // import './components/aos.js';
 
-// import './components/photoswipe.js';
 
 
 

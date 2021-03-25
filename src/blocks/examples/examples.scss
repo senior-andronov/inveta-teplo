@@ -134,6 +134,9 @@
 	}
 	&__slider-bot-wrapper {
 		height: 100px;
+		.swiper-slide {
+			cursor: pointer;
+		}
 	}
 	&__slider-bot-image {
 		max-width: 173px;
