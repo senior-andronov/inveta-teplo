@@ -13,12 +13,14 @@ function scrollAnchors() {
 				menu.classList.remove('_active')
 				document.body.classList.remove('_lock');
 			}
-			document.querySelector(block).scrollIntoView({
-				behavior: 'smooth',
-				block: 'start',
-			})
+			_scrollTo(block, -110);
 		})
 	})
+	function _scrollTo(selector, yOffset = 0) {
+		const el = document.querySelector(selector);
+		const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+		window.scrollTo({ top: y, behavior: 'smooth' });
+	}
 }
 scrollAnchors()
 
@@ -53,7 +55,6 @@ window.addEventListener('click', function (e) {
 		burger();
 	}
 });
-// removeMenu();
 menuBurger.addEventListener('click', function () {
 	burger();
 })

@@ -45,11 +45,21 @@
 		max-width: 280px;
 		width: 100%;
 	}
+	.modal__input {
+		height: 70px;
+	}
 }
 @media (max-width: $md3+px) {
 	.questions {
 		p {
 			max-width: 400px;
+		}
+	}
+}
+@media (max-width: $md4+px) {
+	.questions {
+		.modal__input {
+			height: 60px;
 		}
 	}
 }

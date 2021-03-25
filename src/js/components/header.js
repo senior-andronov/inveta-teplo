@@ -3,9 +3,13 @@ function headerFixed() {
 		offsetHeight = header.offsetHeight;
 	window.addEventListener('load', function () {
 		let height = window.innerHeight;
-		let lostY = 0;
+		let lostY = window.scrollY;
 		if (pageYOffset > offsetHeight) { header.classList.add('_hide'); }
 		document.addEventListener('scroll', function () {
+			checkHeigh();
+		});
+		checkHeigh();
+		function checkHeigh() {
 			if (lostY >= 110) {
 				if (window.scrollY > lostY) {
 					header.classList.add('_hide');
@@ -20,7 +24,7 @@ function headerFixed() {
 				header.classList.remove('_hide')
 			}
 			lostY = window.scrollY;
-		});
+		}
 	});
 }
 headerFixed();
