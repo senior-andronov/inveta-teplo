@@ -320,6 +320,7 @@
 }
 @media (max-width: $md4+px) {
 	.header {
+		background-color: $white;
 		&__logo {
 			width: 90px;
 			height: 40px;

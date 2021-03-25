@@ -6,10 +6,10 @@ function headerFixed() {
 		let lostY = window.scrollY;
 		if (pageYOffset > offsetHeight) { header.classList.add('_hide'); }
 		document.addEventListener('scroll', function () {
-			checkHeigh();
+			checkHeight();
 		});
-		checkHeigh();
-		function checkHeigh() {
+		checkHeight();
+		function checkHeight() {
 			if (lostY >= 110) {
 				if (window.scrollY > lostY) {
 					header.classList.add('_hide');
