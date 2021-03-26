@@ -10,7 +10,7 @@ import 'core-js/features/dom-collections/for-each';
 import 'core-js/features/is-iterable';
 
 import 'whatwg-fetch';
-import './lib/polyfills.js';
+// import './lib/polyfills.js';
 
 // import PhotoSwipe from 'photoswipe';
 // import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
