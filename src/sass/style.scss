@@ -21,9 +21,11 @@ body {
 	@include line-height(20, 18);
 	&._lock {
 		overflow: hidden;
+		position: fixed;
 	}
 	&.active {
 		overflow: hidden;
+		position: fixed;
 	}
 }
 a {
