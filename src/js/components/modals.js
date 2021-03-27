@@ -32,6 +32,7 @@ function modal() {
 
 	}
 
+
 	function addClassBody() {
 		if (document.querySelector('.modal._active')) return;
 		(document.body.classList.contains('active')) ? document.body.classList.remove('active') : document.body.classList.add('active')
@@ -42,6 +43,7 @@ function modal() {
 	overflow.forEach(item => item.addEventListener('click', closeModal));
 }
 modal();
+
 
 
 function animateCSS(element, animation) {
