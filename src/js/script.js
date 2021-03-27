@@ -26,10 +26,10 @@ import 'whatwg-fetch';
 import objectFitImages from 'object-fit-images';
 import svg4everybody from 'svg4everybody';
 
+import './components/iosScrollFix.js';
 import './components/dynamicAdapt.js';
 import './components/header.js';
 import './components/accordion.js';
-import './components/no-scroll.js';
 import './components/modals.js';
 import './components/mask.js';
 import './components/tabs.js';
