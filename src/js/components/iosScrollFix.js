@@ -2,8 +2,8 @@
 const isiPhone = (navigator.userAgent.match(/iPhone/i) != null);
 const isiPad = (navigator.userAgent.match(/iPad/i) != null);
 const isiPod = (navigator.userAgent.match(/iPod/i) != null);
-
 // IOS Scroll Fix
+
 // Выключение
 let disableScroll = () => {
 	let pagePosition = window.scrollY;
@@ -24,10 +24,11 @@ let enableScroll = () => {
 }
 
 // Слушатель
-let scrollLock_BtnListener = (item) => {
-	item.addEventListener('click', (e) => {
-		item.classList.toggle('scroll')
-		if (item.classList.contains('scroll')) {
+let scrollLock_BtnListener = (el) => {
+	el.addEventListener('click', () => {
+		burger()
+		el.classList.toggle('scroll')
+		if (el.classList.contains('scroll')) {
 			disableScroll();
 		} else {
 			enableScroll();
@@ -35,7 +36,3 @@ let scrollLock_BtnListener = (item) => {
 	});
 }
 
-//Проверка с чего зашли на сайт, если ios, то подключаем скрипт, на нужный элемент
-if (isiPhone || isiPad || isiPod) {
-	scrollLock_BtnListener(item); // вместо item, нужный элемент, к примеру модалку, или бургер!
-}
