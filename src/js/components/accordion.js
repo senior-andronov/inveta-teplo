@@ -1,14 +1,3 @@
-// function accordion() {
-// 	document.querySelectorAll('.services__item:nth-child(n + 5)').forEach(item => item.classList.toggle('_hidden'));
-// }
-// accordion();
-
-// document.querySelector(".services__btn").addEventListener("click", () => {
-// 	accordion();
-// 	addClassss
-// });
-
-
 function showText() {
 	if (this.classList.contains('_active')) {
 		this.classList.remove('_active')

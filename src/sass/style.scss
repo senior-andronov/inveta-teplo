@@ -21,11 +21,9 @@ body {
 	@include line-height(20, 18);
 	&._lock {
 		overflow: hidden;
-		position: fixed;
 	}
 	&.active {
 		overflow: hidden;
-		position: fixed;
 	}
 }
 a {
@@ -185,7 +183,6 @@ section {
 
 // Блоки
 
-// @import "../blocks/test";
 @import "../blocks/header/header";
 @import "../blocks/main/main";
 @import "../blocks/advantages/advantages";
