@@ -25,15 +25,16 @@ body {
 	&.active {
 		overflow: hidden;
 	}
+	&.ios-lock {
+		overflow: hidden;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
 }
-.ios-lock {
-	overflow: hidden;
-	height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
+
 a {
 	cursor: pointer;
 }
