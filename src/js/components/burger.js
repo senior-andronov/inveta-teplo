@@ -81,11 +81,12 @@ function burger() {
 		headerLogoMob.classList.add('_active');
 		menu.classList.add('_active');
 		menuBurger.classList.add('_active');
+		// IOS Test
+		if (isiPhone || isiPad || isiPod) {
+			disableScroll();
+		}
 		document.body.classList.add('_lock');
 	}
-}
-if (isiPhone || isiPad || isiPod) {
-	scrollLock_BtnListener(menuBurger);
 }
 
 function closeBurger() {
@@ -94,7 +95,13 @@ function closeBurger() {
 	headerLogoMob.classList.remove('_active');
 	menu.classList.remove('_active');
 	menuBurger.classList.remove('_active');
+	// IOS Test
+	if ((isiPhone || isiPad || isiPod) && !document.body.classList.contains('active')) {
+		enableScroll();
+	}
+
 	document.body.classList.remove('_lock');
+
 }
 window.addEventListener('click', function (e) {
 	if (!headerMob.contains(e.target) && !menuBurger.contains(e.target) && headerMob.classList.contains('_active')) {

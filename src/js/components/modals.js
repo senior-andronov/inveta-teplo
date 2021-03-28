@@ -38,10 +38,6 @@ function modal() {
 	function showModal(parent) {
 		const content = parent.querySelector('.modal__content'),
 			overflow2 = parent.querySelector('.modal__overflow');
-		if (isiPhone || isiPad || isiPod) {
-			disableScroll();
-		}
-
 		addClassBody();
 		parent.classList.add('_active');
 		overflow2.classList.add('_active');
@@ -57,8 +53,6 @@ function modal() {
 		animateCSS(modalActiveOverflow, 'animateFadeOut');
 		modalActiveContent.addEventListener('animationend', () => {
 			parent.classList.remove('_active');
-			if (isiPhone || isiPad || isiPod) { enableScroll(); }
-
 			modalActiveOverflow.classList.remove('_active');
 			addClassBody();
 		}, { once: true })
@@ -68,7 +62,15 @@ function modal() {
 
 	function addClassBody() {
 		if (document.querySelector('.modal._active')) return;
-		(document.body.classList.contains('active')) ? document.body.classList.remove('active') : document.body.classList.add('active')
+		if (document.body.classList.contains('active')) {
+			// IOS Test
+			if (isiPhone || isiPad || isiPod) { enableScroll(); }
+			document.body.classList.remove('active')
+		} else {
+			// IOS Test
+			if ((isiPhone || isiPad || isiPod) && !document.body.classList.contains('ios-lock')) { disableScroll(); }
+			document.body.classList.add('active')
+		}
 	}
 
 	btns.forEach(item => item.addEventListener('click', checkModal));
