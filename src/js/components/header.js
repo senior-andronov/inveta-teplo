@@ -43,11 +43,7 @@
 // }
 // headerFixed();
 
-// let md1 = window.matchMedia("(min-width: 992px)")
-// const isiPhone = (navigator.userAgent.match(/iPhone/i) != null);
-// const isiPad = (navigator.userAgent.match(/iPad/i) != null);
-// const isiPod = (navigator.userAgent.match(/iPod/i) != null);
-(function () {
+function scrollHeader() {
 	let curScroll
 	let prevScroll = window.scrollY || document.documentElement.scrollTop
 	let curDirection = 0
@@ -60,7 +56,6 @@
 		curScroll = window.scrollY || document.documentElement.scrollTop
 		if (curScroll < threshold) {
 			header.classList.remove('_bg')
-			console.log(1)
 		}
 		if (curScroll > prevScroll) {
 			// scrolled down
@@ -92,6 +87,7 @@
 		}
 		return toggled
 	};
-	// checkScroll()
+
 	window.addEventListener('scroll', checkScroll)
-})();
+};
+scrollHeader()
