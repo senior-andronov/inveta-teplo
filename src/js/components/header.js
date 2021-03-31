@@ -43,6 +43,7 @@
 // }
 // headerFixed();
 
+
 function scrollHeader() {
 	let curScroll
 	let prevScroll = window.scrollY || document.documentElement.scrollTop
@@ -51,6 +52,13 @@ function scrollHeader() {
 	let header = document.querySelector('.header')
 	let toggled
 	let threshold = 110
+
+
+	if (window.scrollY >= threshold) {
+		header.classList.add('_bg')
+	}
+
+	console.log(threshold);
 
 	function checkScroll() {
 		curScroll = window.scrollY || document.documentElement.scrollTop
@@ -87,7 +95,6 @@ function scrollHeader() {
 		}
 		return toggled
 	};
-
 	window.addEventListener('scroll', checkScroll)
 };
 scrollHeader()
